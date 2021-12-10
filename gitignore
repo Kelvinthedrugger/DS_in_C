@@ -2,4 +2,6 @@
 *.c.un~
 .txt~
 .txt.un~
+.md~
+.md.un~
 

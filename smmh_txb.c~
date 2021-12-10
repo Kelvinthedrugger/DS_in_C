@@ -95,23 +95,26 @@ int level(int h){
 	return !(exp % 2);
 }
 
-int minChildGnd(int nodeI, int len){
+int minChildGnd(element heap[], int nodeI, int len){
 	// returns the child/grandchild of nodeI with smallest key
 
-	// heap is globally defined douche
-	/*
 	int i;
 	int minval;
-       	minval = heap[nodeI*4].key;
-	// travels on next min level
-	// doesn't need to travel down even more as long as nodeI*8 < len
-	// since it's been taken care of in deleteMin()
-	for(i = nodeI*4; i < nodeI*8; i++){
-		if(minval < heap[i].key)
-			minval = heap[i].key;
+	// child ? 
+	if(nodeI > len/2){
+		return 0;
 	}
-	*/
-	return 0;
+	// travels on next min level
+	// grandchild
+       	minval = heap[nodeI*4].key;
+	int idx = 0;
+	for(i = nodeI*4; i < nodeI*8; i++){
+		if(minval > heap[i].key){
+			minval = heap[i].key;
+			idx = i;
+		}
+	}
+	return idx;
 }
 
 element deleteMin(element heap[], int *n){
@@ -124,8 +127,10 @@ element deleteMin(element heap[], int *n){
 	}
 	heap[0] = heap[1];
 	x = heap[(*n)--];
+	printf("\nx: %d\n",x.key);
 	for(i = 1; last = (*n)/2; i <= last){
-		k = minChildGnd(i, *n);
+		k = minChildGnd(heap, i, *n);
+		printf("\nfound k: %d; key: %d\n",k,heap[k]);
 		if(x.key <= heap[k].key)
 			break;
 		// case b or c
@@ -170,6 +175,9 @@ int main(void){
 		minmaxInsert(heap,&n,a);
 		show(heap,n);
 	}
+	printf("\ndelete min operated\n");
+	deleteMin(heap,&n);
+	show(heap,n);
 	return 0;
 }
 

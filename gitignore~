@@ -1,9 +1,5 @@
 *.c~
 *.c.un~
-.c~
-.c.un~
-..c~
-..c.un~
 .txt~
 .txt.un~
 .md~

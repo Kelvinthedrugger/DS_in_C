@@ -13,4 +13,5 @@
 
 	If you find the content useful, don't be stingy on giving stars
 
+	VIM on Windows is hard for me
 

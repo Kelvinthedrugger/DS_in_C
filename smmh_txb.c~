@@ -102,7 +102,7 @@ int minChildGnd(element heap[], int nodeI, int len){
 	int minval;
 	// child ? 
 	if(nodeI > len/2){
-		return 0;
+		return len;
 	}
 	// travels on next min level
 	// grandchild
@@ -167,7 +167,8 @@ commands:
 int main(void){
 	int n = 0;
 	int i;
-	int arr[] = {5,70,40,30,9,7,15};
+	int arr[] = {7,70,40,30,9,10,15};
+	int arr1[] = {5,70,40,30,9,7,15};
 	for(i = 0; i < 7; i++){
 		printf("\nheap at epoch %d\n",i+1);
 		element a;
@@ -175,6 +176,7 @@ int main(void){
 		minmaxInsert(heap,&n,a);
 		show(heap,n);
 	}
+	// works half way
 	printf("\ndelete min operated\n");
 	deleteMin(heap,&n);
 	show(heap,n);

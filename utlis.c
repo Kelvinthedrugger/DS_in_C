@@ -3,14 +3,15 @@
 #include<stdlib.h>
 
 # define SWAP(x,y,t)((t)=(x),(x)=(y),(y)=(t))
-
-
 // w/o tmp var ver. for basic types
 void swap(int *a, int *b){
 	*a ^= *b;
 	*b ^= *a;
 	*a ^= *b;
 }
+
+# define COMPARE(x,y)((x)>(y)?1:(x)==(y)?0:-1)
+
 
 // to pass compiling process
 int main(void){

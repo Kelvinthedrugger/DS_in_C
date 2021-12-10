@@ -4,6 +4,8 @@
 .c.un~
 ..c~
 ..c.un~
+*..c~
+*..c.un~
 .txt~
 .txt.un~
 .md~
@@ -11,4 +13,11 @@
 .exe
 .gitignore.un~
 .gitignore~
+*.txt~
+*.txt.un~
+*.md~
+*.md.un~
+*.exe
+*.gitignore.un~
+*.gitignore~
 

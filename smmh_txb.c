@@ -149,8 +149,29 @@ element deleteMin(element heap[], int *n){
 	heap[i] = x;
 	return heap[0];
 }
+int maxChildGnd(element heap[], int nodeI, int len){
+	return 0;
+} 
+element deleteMax(element heap[], int *n){
+	int i, last, k, parent;
+	element temp, x;
+	if(!(*n)){
+		fprintf(stderr, "ff");
+		heap[0].key = INT_MAX;// the error key in heap[0]
+		return heap[0];
+	}
+	i = heap[2].key > heap[3].key ? 2 : 3;
+	heap[0] = heap[i];
+	x = heap[(*n)--];
+	printf("\nx: %d\n",x.key);
 
-void deleteMax(element heap[], int *n);
+	// loop over for re-insertion
+
+
+
+	heap[i] = x;
+	return heap[0];
+}
 
 /* hw requirement
 function has parenthesis

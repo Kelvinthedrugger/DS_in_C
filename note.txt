@@ -12,8 +12,14 @@
  HW3:
 
 	leftistTree.c (done) + binHeap.c(not done)
+	
+	fibonacci heap
+
 	minmaxheap done insertion following the textbook, deletion not done
 
+	AVL + red-black
 
+	Algorithm to search and delete keys from a B-tree by position
 
- 
+	B+ tree for exact range search, insert and delete
+

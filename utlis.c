@@ -12,6 +12,7 @@ void swap(int *a, int *b){
 
 # define COMPARE(x,y)((x)>(y)?1:(x)==(y)?0:-1)
 
+#define isFull(ptr) (!(ptr))
 
 // to pass compiling process
 int main(void){

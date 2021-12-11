@@ -220,7 +220,7 @@ int main(void){
 	int arr1[] = {5,70,40,30,9,7,15};
 	int top;
 	call(arr,7,top);
-	call(arr1,8,top);
+	call(arr1,7,top);
 	return 0;
 }
 

@@ -218,9 +218,14 @@ void call(int arr[], int len, int top){
 int main(void){
 	int arr[] = {7,70,40,30,9,10,15};
 	int arr1[] = {5,70,40,30,9,7,15};
+	int arr2[] = {7,70,40,30,9,10,15,45,50,30,20,12};
 	int top;
+	/*
 	call(arr,7,top);
 	call(arr1,7,top);
+	*/
+	// doesnt work again
+	call(arr2,12,top);
 	return 0;
 }
 

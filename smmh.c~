@@ -11,7 +11,7 @@ commands:
 	show()
 	quit: terminate program, has nothing to do with the tree
 */
-#define arrlen 30
+#define arrlen 32 // max heap size + 1
 
 void swap(int *a, int *b){
 	*a ^= *b;

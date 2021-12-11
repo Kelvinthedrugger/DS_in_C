@@ -26,14 +26,14 @@ int top;
 void insert(int x);
 void deletemin();
 void deletemax();
-void show();
+void show(int *heap);
 
-void init_heap(){
+void init_heap(int *heap){
 	heap = (int*)malloc(sizeof(arrlen));
 	top = 0;
 }
 
 int main(void){
-	init_heap();
+	init_heap(heap);
 	return 0;
 }

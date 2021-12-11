@@ -100,14 +100,27 @@ int minChildGnd(element heap[], int nodeI, int len){
 
 	int i;
 	int minval;
+	int idx = 0;
 	// child ? 
 	if(nodeI > len/2){
-		return len;
+		// calculate the starting idx of last level
+		int exp = 0, base = 1;
+		while(base <= nodeI){
+			base *= 2;
+			exp += 1;
+		}
+		minval = heap[exp].key;
+		for(i = exp; i < len+1; i++){
+			if(minval > heap[i].key){
+				minval = heap[i].key;
+				idx = i;
+			}	
+		}
+		return i;
 	}
 	// travels on next min level
 	// grandchild
        	minval = heap[nodeI*4].key;
-	int idx = 0;
 	for(i = nodeI*4; i < nodeI*8; i++){
 		if(minval > heap[i].key){
 			minval = heap[i].key;
@@ -149,6 +162,7 @@ element deleteMin(element heap[], int *n){
 	heap[i] = x;
 	return heap[0];
 }
+
 int maxChildGnd(element heap[], int nodeI, int len){
 	return 0;
 } 
@@ -185,23 +199,28 @@ commands:
 
 // it works fk huge waste of time on tiny bug stupid closed interval
 // page 435
-int main(void){
-	int n = 0;
+void call(int arr[], int len, int top){
+	top = 0;
 	int i;
-	int arr[] = {7,70,40,30,9,10,15};
-	int arr1[] = {5,70,40,30,9,7,15};
-	for(i = 0; i < 7; i++){
+	for(i = 0; i < len; i++){
 		printf("\nheap at epoch %d\n",i+1);
 		element a;
 		a.key = arr[i];
-		minmaxInsert(heap,&n,a);
-		show(heap,n);
+		minmaxInsert(heap,&top,a);
+		show(heap,top);
 	}
 	// works half way
 	// tmp works
 	printf("\ndelete min operated\n");
-	deleteMin(heap,&n);
-	show(heap,n);
+	deleteMin(heap,&top);
+	show(heap,top);
+}
+int main(void){
+	int arr[] = {7,70,40,30,9,10,15};
+	int arr1[] = {5,70,40,30,9,7,15};
+	int top;
+	call(arr,7,top);
+	call(arr1,8,top);
 	return 0;
 }
 

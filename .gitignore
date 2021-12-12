@@ -20,4 +20,9 @@
 *.exe
 *.gitignore.un~
 *.gitignore~
+__pycache__
+*.py~
+*.py.un~
+.py~
+.py.un~
 

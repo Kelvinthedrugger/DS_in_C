@@ -104,6 +104,14 @@ int minChildGnd(element heap[], int nodeI, int len){
 	// child ? 
 	if(nodeI > len/2){
 		// calculate the starting idx of last level
+		minval = heap[nodeI].key;
+		for(i = nodeI; i < len+1; i++){
+			if(minval > heap[i].key){
+				minval = heap[i].key;
+				idx = i;
+			}
+		}
+		return idx;
 		int exp = 0, base = 1;
 		while(base <= nodeI){
 			base *= 2;
@@ -120,7 +128,7 @@ int minChildGnd(element heap[], int nodeI, int len){
 	}
 	// travels on next min level
 	// grandchild
-       	minval = heap[nodeI*4].key;
+    minval = heap[nodeI*4].key;
 	for(i = nodeI*4; i < nodeI*8; i++){
 		if(minval > heap[i].key){
 			minval = heap[i].key;

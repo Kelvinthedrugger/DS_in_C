@@ -15,3 +15,21 @@
 
 	VIM on Windows is hard for me
 
+	makeit.c is now slow tho there is barely any memory occupied, need speed & low level hack on this
+
+#### Tips
+
+     from command line, run below to compile the file (on Windows)
+
+	gcc YourFile.c -o YourFile
+
+     for ppl who don't want to type out long command, type this alternatively (also on Windows)
+
+	>>> makeit.exe
+	>>> Yourfile
+
+     you'll see the same YourFile.exe popping out in the folder, just run it if you would
+
+     add makeit.exe to PATH variable on your device might help you to make .c file anywhere 
+     not just in this folder (not tested)
+

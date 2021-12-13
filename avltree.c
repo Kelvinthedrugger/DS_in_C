@@ -75,9 +75,5 @@ void avlInsert(Node **parent, int x, int *unbalanced){
 }
 
 int main(void){
-	// overflow ? 
-	Node *root = NULL;
-	avlInsert(&root, 2, 0);
-	printf("%d",root->data);
 	return 0;
 }

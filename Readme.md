@@ -26,7 +26,7 @@
 
 
    for ppl who don't want to type out long command, type this alternatively (also on Windows)
-
+   (Attention, you have to compile makeit.c first if you didn't see makeit.exe in your folder)
 
 	>>> makeit.exe
 	>>> Yourfile

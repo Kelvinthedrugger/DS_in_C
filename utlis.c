@@ -2,6 +2,25 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+// Memory allocation
+#define Malloc(p,n) \
+	if(!((p) = malloc(sizeof(*(p))*(n)))){\
+		fprintf(stderr, "Insufficient memory");\
+		exit(EXIT_FAILURE);\
+	}
+#define Calloc(p,n) \
+	if(!((p) = calloc(n, sizeof(*(p))))){\
+		fprintf(stderr, "Insufficient memory");\
+		exit(EXIT_FAILURE);\
+	}
+
+#define Realloc(p,n) \
+	if(!((p) = realloc((p),sizeof(*(p))*(n)))){\
+		fprintf(stderr, "Insufficient memory");\
+		exit(EXIT_FAILURE);\
+	}
+
+// useful stuff
 # define SWAP(x,y,t)((t)=(x),(x)=(y),(y)=(t))
 // w/o tmp var ver. for basic types
 void swap(int *a, int *b){

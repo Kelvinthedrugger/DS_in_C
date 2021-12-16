@@ -86,7 +86,7 @@ void adjustMin(Node *Minroot){
 	Minroot->child = tmp;
 }
 
-void meldTwoHeap(Node *Minroot, Node *heap2){
+void meldTwoHeaps(Node *Minroot, Node *heap2){
 	// merge child of minroot and heap2 into same linkedlist
 	appendList(Minroot->child,heap2);
 	// adjust so that it's a real bin/finheap
@@ -110,7 +110,19 @@ void deleteMin(Node *Minroot){
 	Node *head2 = Minroot->child->child;
 	Minroot->child = NULL;
 	// merge the trees with same degree, a pair at a time
+	/*
 	
+	Stack roots;
+
+	loop until there aren't trees with same degree
+	aka first loop through newhead, then head2
+
+		if roots[degree] is None:
+			insert(tree with degree degree, roots[tree->degree])
+		else:
+			meldTwoHeaps(roots[tree->degree], tree with degree degree)
+
+	*/	
 
 	// minroot points to the smallest node
 	Minroot->child = newhead;

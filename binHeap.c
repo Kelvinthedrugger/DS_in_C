@@ -105,6 +105,7 @@ void insertHeap(Node *Minroot, int x){
 	}
 }
 
+// adjust the node pointed by Minroot to the node with the smallest data in the top linkedlist
 void meldHeaps(Node *Minroot){
 	Node *head = Minroot->child;
 	Node **indirect = &(head->link);

@@ -37,14 +37,62 @@ void printList(Node *head){
 	}
 }
 
+
+/* If Minroot is the root per se, run: %s/Minroot->child/Minroot/g */
+
+// NO circular here
+// we should do a doubly circular linked list
+
 void appendList(Node *head, Node *rookie){
-	Node **indirect = &head;
-	while((*indirect)->link){
+	// add circular
+	if(!head->link){
+		head->link = rookie;
+		rookie->link = head;
+		rookie->prev = head;
+		return;
+	}
+	Node **indirect = &(head->link);
+	while((*indirect)->link != head){
 		indirect = &((*indirect)->link);
 	}
 	(*indirect)->link = rookie;
 	rookie->prev = *indirect;
+	rookie->link = head;
 }
+
+void insertHeap(Node *Minroot, int x){
+	Node *Xnode = newNode(x);
+	appendList(Minroot->child,Xnode);
+
+	// what does minroot == 0 means?
+	if(Minroot->child->data > Xnode->data){
+		Minroot->child = Xnode;
+	}
+	Minroot->child->degree += 1;
+}
+
+void adjustMin(Node *Minroot){
+	Node *head = Minroot->child;
+	Node **indirect = &(head->link);
+	Node *tmp = head; // candidate top node with smallest data
+	
+	while(*indirect != head){
+		if(tmp->data > (*indirect)->data){
+			tmp = *indirect;
+		}
+		indirect = &((*indirect)->link);
+	}
+	
+	Minroot->child = tmp;
+}
+
+void meldTwoHeap(Node *Minroot, Node *heap2){
+	// merge child of minroot and heap2 into same linkedlist
+	appendList(Minroot->child,heap2);
+	// adjust so that it's a real bin/finheap
+	adjustMin(Minroot);
+}
+
 
 void removefromList(Node *head, Node *target){
 	Node **indirect = &head;
@@ -55,18 +103,29 @@ void removefromList(Node *head, Node *target){
 	target->prev = (*indirect)->prev;
 }
 
-// merge the trees with same degree, a pair at a time
-void deleteMin();
+void deleteMin(Node *Minroot){
+	// circular so that won't be NULL
+	Node *newhead = Minroot->child->link;
+	// remove minNode from heap
+	Node *head2 = Minroot->child->child;
+	Minroot->child = NULL;
+	// merge the trees with same degree, a pair at a time
+	
 
-void meldTwoHeap(Node *heap1, Node *heap2);
+	// minroot points to the smallest node
+	Minroot->child = newhead;
+	adjustMin(Minroot);
+}
+
+
 //fib
-void mergeList(Node *a, Node *b){
-	// default: a->b
-	Node **indirect = &head;
-	while((*indirect)->link){
-		indirect = &((*indirect)->link);
+
+void deleteAny(Node *Minroot, Node *target){
+	if(Minroot->child == target){
+		deleteMin(Minroot);
+		return;
 	}
-	(*indirect)->link = b; // merged
+
 }
 
 

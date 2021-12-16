@@ -11,7 +11,8 @@
 
  HW3:
 
-	leftistTree.c (done) + binHeap.c(not done)
+	leftistTree.c (done) + binHeap.c(mostly done, not tested with given
+data tho)
 	
 	fibonacci heap
 

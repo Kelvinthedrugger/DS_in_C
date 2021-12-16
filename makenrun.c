@@ -55,6 +55,8 @@ int main(void){
 	// write the file
 	// i got entangled up since i stay up late for too much
 	FILE *cmdfile;
+	// problem: c1 is not the suitable filename
+	// plus, filename should be specified type. e.g. yours.c 
 	cmdfile = fopen(c1,"w");
 
 	fprintf(cmdfile,"%s","\

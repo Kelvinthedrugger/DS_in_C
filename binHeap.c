@@ -2,20 +2,132 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct{
+#define Malloc(p,n) \
+	if(!((p) = malloc(sizeof(*(p))*n))){ \
+		fprintf(stderr,"bbllhshs");\
+		exit(EXIT_FAILURE); \
+	}
+
+typedef struct Node Node;
+struct Node{
 	int degree; // the number of children it has
 	struct Node *child;// points to one of its children 
 	struct Node *link; // siblings: singly linked circular list
 	int data;
-}Node;
+};
 
 Node *newNode(int num){
-	Node *tnode = (Node*)malloc(sizeof(Node));
+	Node *tnode;
+	Malloc(tnode,1);
 	tnode->data = num;
 	tnode->degree = 0; // shoud we #define maxdeg 20 ?
 	tnode->child = NULL;
 	tnode->link = NULL;
 	return tnode;
+}
+
+// circular singly linked list
+
+void removefromList(Node *head, Node *target){
+	Node **indirect = &head;
+	while((*indirect)->link != target){
+		indirect = &((*indirect)->link);
+	}
+	(*indirect)->link = target->link;
+}
+
+// should add degree support?
+// definitely should add child support
+void appendList(Node *head, Node *rookie){
+
+	if (head->link == NULL){
+		head->link = head;
+	}
+
+	if (head->link == head){
+		head->link = rookie;
+		rookie->link = head;
+		return;
+	}
+	
+	Node **indirect = &head;
+	while((*indirect)->link != head){
+		indirect = &((*indirect)->link);
+	}
+	(*indirect)->link = rookie;
+	(*indirect)->link->link = head; // rookie points to head
+}
+
+void printList(Node *head){
+	printf("list: ");
+	printf("%d ",head->data);
+	if(!head->link){
+		return;
+	}
+	if(head->link == head){
+		return;
+	}
+
+	Node **indirect = &(head->link);
+	while((*indirect) != head){
+		printf("%d ",(*indirect)->data);
+		indirect = &(*indirect)->link;
+	}
+}
+
+void test1(){
+	Node *root = newNode(1);
+	//printf("%d\n",root->data);
+	//printf("%u",root->link);
+	//return;
+	printList(root);
+	printf("\n");
+	appendList(root,newNode(2));
+	appendList(root,newNode(3));
+	appendList(root,newNode(4));
+	printList(root);
+	printf("\n");
+	removefromList(root,root->link->link);
+	printList(root);
+}
+
+// below not tested
+// min heap: not necessary the one using array
+// can be generalised tree instead of just binary tree
+void insertHeap(Node *Minroot, int x){
+	Node *Xnode = newNode(x);
+	//insert Xnode into cir lnkt list pointed by Min
+	appendList(Minroot->child,Xnode);
+	// what does "min is 0" means?
+	if(Xnode->data < Minroot->child->data || Minroot->child->data == 0){
+		Minroot->child = Xnode;
+	}
+}
+
+void meldHeaps(Node *Minroot){
+	Node *head = Minroot->child;
+	Node **indirect = &(head->link);
+	Node *tmp = head; // candidate top node with smallest data
+	
+	while(*indirect != head){
+		if(tmp->data > (*indirect)->data){
+			tmp = *indirect;
+		}
+		indirect = &((*indirect)->link);
+	}
+	
+	Minroot->child = tmp;
+}
+
+void deleteMinEle(Node *Minroot){
+	// access the top linked list
+	Node *head = Minroot->child->link;
+	// remove min element in binHeap
+	Minroot->child = Minroot->child->child;
+	// add child of the orginal min element into top linked list
+	appendList(head,Minroot->child->child);
+	// determine the new min element
+	meldHeaps(Minroot);
 }
 
 // linkedlist2.c for cir list imp.
@@ -50,5 +162,6 @@ delete:
 */
 
 int main(void){
+	test1();
 	return 0;
 }

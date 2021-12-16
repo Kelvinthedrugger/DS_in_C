@@ -35,5 +35,6 @@ void swap(int *a, int *b){
 
 // to pass compiling process
 int main(void){
+	printf("\nrun passed");
 	return 0;
 }

@@ -1,4 +1,5 @@
 // min binomial heaps
+// degree not done
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -119,6 +120,7 @@ void meldHeaps(Node *Minroot){
 	Minroot->child = tmp;
 }
 
+// we didn't join the trees with same degree!
 void deleteMinEle(Node *Minroot){
 	// access the top linked list
 	Node *head = Minroot->child->link;

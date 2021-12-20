@@ -88,6 +88,13 @@ void test1(){
 	removefromList(root,root->link->link);
 	appendList(root,newNode(4));
 	printList(root);
+	Node *n1 = newNode(5);
+	CirList(n1);
+	appendList(n1,newNode(6));
+	printList(n1);
+	appendList(root,n1);
+	printList(root);
+
 }
 
 // binomial heap
@@ -226,5 +233,6 @@ delete:
 // Fibonacci Heap:: double ended priority heap
 
 int main(void){
+	test1();
 	return 0;
 }

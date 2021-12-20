@@ -63,6 +63,7 @@ void removefromList(Node *head, Node *target){
 }
 
 // append node at tail of linked list 
+// should change rok to Node ** so that chains/trees can be merged
 void appendList(Node *head, Node *rok){
 	Node **ind = &head;
 	// if ind points to head

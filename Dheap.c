@@ -30,7 +30,6 @@ Node *newNode(int num){
 	return tnode;
 }
 
-
 // linked list, needs to be circular!
 //  to be convenient to travel down the top list
 
@@ -66,6 +65,7 @@ void removefromList(Node *head, Node *target){
 }
 
 // append node at tail of linked list 
+// should change rok to Node ** so that chains/trees can be merged
 void appendList(Node *head, Node *rok){
 	Node **ind = &head;
 	// if ind points to head
@@ -91,6 +91,12 @@ void test1(){
 	printList(root);
 	removefromList(root,root->link->link);
 	appendList(root,newNode(4));
+	printList(root);
+	Node *n1 = newNode(5);
+	CirList(n1);
+	appendList(n1,newNode(6));
+	printList(n1);
+	appendList(root,n1);
 	printList(root);
 }
 

@@ -1,5 +1,4 @@
-// singly ended priority queue
-// e.g. binomial heap
+// Fibonacci Heap:: double ended priority heap
 // all min heaps
 #include<stdio.h>
 #include<stdlib.h>
@@ -15,6 +14,7 @@ typedef struct Node Node;
 struct Node{
 	int data;
 	Node *link; // sibling
+	Node *prev; // double ended
 	Node *child;
 	int degree; // number of child
 };
@@ -25,6 +25,7 @@ Node *newNode(int num){
 	tnode->data = num;
 	tnode->degree = 0;   // number of child, binomial, fibonacci
 	tnode->child = NULL; // point to one of its child
+	tnode->prev = NULL;
 	tnode->link = NULL;  // to maintain sibling
 	return tnode;
 }
@@ -54,11 +55,13 @@ void printList(Node *head){
 		ind = &((*ind)->link);
 	}
 }
+
 void removefromList(Node *head, Node *target){
 	Node **ind = &head;
 	while((*ind)->link != target){
 		ind = &((*ind)->link);
 	}
+	target->prev = *ind;
 	(*ind)->link = target->link;
 }
 
@@ -72,10 +75,12 @@ void appendList(Node *head, Node *rok){
 	}
 	rok->link = head;
 	(*ind)->link = rok;
+	rok->prev = *ind;
 }
 
 void CirList(Node *head){
 	head->link = head;
+	head->prev = head; // not sure if this line is needed in D lktlist
 }
 
 void test1(){
@@ -222,8 +227,8 @@ delete:
 
 */
 
-// Fibonacci Heap:: double ended priority heap
 
 int main(void){
+	test1();
 	return 0;
 }

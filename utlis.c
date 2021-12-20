@@ -29,7 +29,7 @@ void swap(int *a, int *b){
 	*a ^= *b;
 }
 
-# define COMPARE(x,y)((x)>(y)?1:(x)==(y)?0:-1)
+# define Compare(x,y)((x)>(y)?1:(x)==(y)?0:-1)
 
 #define isFull(ptr) (!(ptr))
 

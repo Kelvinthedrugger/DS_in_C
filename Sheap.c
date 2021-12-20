@@ -1,5 +1,6 @@
 // singly ended priority queue
 // e.g. binomial heap
+// all min heaps
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -22,9 +23,9 @@ Node *newNode(int num){
 	Node *tnode;
 	Malloc(tnode,1);
 	tnode->data = num;
-	tnode->degree = 0;
-	tnode->child = NULL;
-	tnode->link = NULL;
+	tnode->degree = 0;   // number of child, binomial, fibonacci
+	tnode->child = NULL; // point to one of its child
+	tnode->link = NULL;  // to maintain sibling
 	return tnode;
 }
 
@@ -43,6 +44,7 @@ Node *traverse(Node *start, Node *tar){
 
 void printList(Node *head){
 	// print head node
+	printf("list: ");
 	printf("%d ",head->data);
 
 	// traverse down
@@ -63,11 +65,28 @@ void removefromList(Node *head, Node *target){
 // append node at tail of linked list 
 void appendList(Node *head, Node *rok){
 	Node **ind = &head;
+	// if ind points to head
+	// 	does not enter the while loop
 	while((*ind)->link != head){
 		ind = &((*ind)->link);
 	}
-	rok->link = (*ind)->link;
-	(*ind)->link = rok->link;
+	rok->link = head;
+	(*ind)->link = rok;
+}
+
+void CirList(Node *head){
+	head->link = head;
+}
+
+void test1(){
+	Node *root = newNode(1);
+	CirList(root);
+	appendList(root,newNode(2));
+	appendList(root,newNode(3));
+	printList(root);
+	removefromList(root,root->link->link);
+	appendList(root,newNode(4));
+	printList(root);
 }
 
 // binomial heap
@@ -80,7 +99,6 @@ void adjustMin(Node **Min, Node *Rok){
 	}
 }
 
-
 // insert new node to the bin heap
 void insertHeap(Node *Min, int x){
 	Node *Xnode = newNode(x);
@@ -89,18 +107,89 @@ void insertHeap(Node *Min, int x){
 	appendList(Min->child,Xnode);
 
 	// check node pointed by Min
+	adjustMin(&(Min->child),Xnode);
+	/*
 	if(x < Min->child->data){
 		Min->child = Xnode;
-	}
+	}*/
 }
+
+# define SWAP(x,y,t)((t)=(x),(x)=(y),(y)=(t))
 
 // merge two heap to the same heap
 //  only the heaps with the same height can be merged?
-void meldTwoheaps(Node *h1, Node *h2);
+void meldTwoHeaps(Node *h1, Node *h2){
+	if (h1->degree != h2->degree){
+		printf("binomial heap can be merged only for the nodes with same height aka degree");
+	}
+	// keep h1.data < h2.data
+	if(h1->data > h2->data){
+		Node *temp;
+		SWAP(h1,h2,temp);
+	}
+	appendList(h1->child,h2);
+	h1->degree += h2->degree + 1; // since degree is initialized as 0
+}
 
+# define Compare(x,y)((x)>(y)?1:(x)==(y)?0:-1)
 
+# define maxlen 20
+
+void push(Node **stack,Node *node, int *top){
+	stack[*top] = node;
+	*top += 1;
+}
+Node *view(Node **stack, int *top){
+	return *(stack+*top);
+}
+
+void pop(Node **stack, int *top){
+	top -= 1;
+	if(top < 0){
+		fprintf(stderr,"cudkjfl");
+		exit(EXIT_FAILURE);
+	}
+}
+int empty(Node **stack, int *top){
+	return *top <= -1;
+}
 // pop the node pointed by min and adjust the structure
-void deleteMin(Node *Min);
+void deleteMin(Node *Min){
+	// pop node pointed by Min: do nothing
+	
+	// use stack ? 
+	// loop until no trees with same height
+	//    pair the trees in top list according to height
+	//    merge the pairs
+
+	//Stack TopList;
+	Node **TopList;
+	Malloc(TopList,maxlen);
+	int top = 0;
+	Node *cur = Min->child->link;
+	push(TopList,Min->child, &top);
+
+	// candidate of the pointed-by-Min node
+	Node *tobeMin = cur;
+
+	// merge trees and find min simultaneously to reach fewer total steps in this program
+	for(; !empty(TopList,&top); cur = cur->link){
+		Node *inList = view(TopList, &top);
+		if(inList->degree == cur->degree){
+			meldTwoHeaps(inList,cur);
+			pop(TopList,&top);
+		}
+		else{
+			push(TopList,cur,&top);
+		}
+		// if tobeMin is not the smallest
+		if(!Compare(cur->data,tobeMin->data)){
+			tobeMin = cur;
+		}
+	}
+	// point min to the node (one of the tree roots) with the smallest data 
+	Min->child = tobeMin;
+}
 
 /*
    before forming cir lktlist, we join pairs of min tree

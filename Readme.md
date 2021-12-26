@@ -28,9 +28,8 @@
    for ppl who don't want to type out long command, type this alternatively (also on Windows)
    (Attention, you have to compile makeit.c first if you didn't see makeit.exe in your folder)
 
-	>>> makeit.exe
-	>>> Yourfile
-
+	>>> makeit YourFile
+	result of Yourfile.exe shown here	
 
    you'll see the same YourFile.exe popping out in the folder, just run it if you would
 

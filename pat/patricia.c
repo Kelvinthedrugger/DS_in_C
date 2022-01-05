@@ -18,7 +18,19 @@ int bit(unsigned k, int bitno){
   // aka kth bit of bitnumber ?
 
   // convert bit number to binary representation
+  // , use Xor (binary ops) ?
+  /*
+    then for loop
+    int i;
+    for(i = 0; i < length of bitno in binary; i++){
+      if (ith answer of XOR == 1)
+        return i;
+    }
+    // else
+    return 0;
+  */
 
+  // or for loop:
   // k starts from 1
   // count kth bit
 

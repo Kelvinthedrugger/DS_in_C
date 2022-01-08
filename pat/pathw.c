@@ -12,14 +12,7 @@ struct patriciaTree{
   patricia left, right;
 };
 
-unsigned int stringToInt(char *key){
-  int number = 0;
-  while(*key){
-    number += *key;
-    *key += 1;
-  }
-  return number;
-}
+patricia t;
 
 // string to int
 unsigned int stringToInt(char *key){
@@ -35,7 +28,7 @@ unsigned int int_to_bit(unsigned int k) {
     return (k == 0 || k == 1 ? k : ((k % 2) + 10 * int_to_bit(k / 2)));
 }
 // use atoi() to convert char *bitno into int::bitnumber ?
-int bit(int key, int bitnumber);
+int bit(int key, char *bitnumber);
 
 // declares one key-val insertion
 void insertTree(char *key, int value);
@@ -81,7 +74,7 @@ void insertNode(patricia *t, int key){
 */
 
 // one key search op
-patricia search(char *key){
+patricia search(int key){
   patricia cur, nxt;
   if(!t){
     return NULL; // empty tree
@@ -90,7 +83,7 @@ patricia search(char *key){
   cur = t;
   while(nxt->bitno > cur->bitno){
     cur = nxt;
-    nxt = (bit(k,nxt->bitno)) ? nxt->right:nxt->left;
+    nxt = (bit(key,nxt->bitno)) ? nxt->right:nxt->left;
   }
   return nxt;
 }

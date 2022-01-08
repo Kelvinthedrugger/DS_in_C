@@ -3,6 +3,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h> // for memcpy
+
+#include<time.h>
+
 #define Malloc(p,n) \
 	if(!((p) = malloc(sizeof(*(p))*(n)))){\
 		fprintf(stderr, "Insufficient memory");\
@@ -184,56 +187,105 @@ void s14(element *aa, int len);
 void solve(){
   int epoch = 0;
   int nn[] = {500,1000,2000,3000,4000};
+  clock_t start_t, end_t;
+  double total1, total2, total3, total4;
 
+  double result[20] = {};
+  int j = 0;  
   for(;epoch < 5; epoch++){
+    
     // insertion sort
+    start_t = clock();
+
     element *ins_arr = get_array(epoch, nn[epoch]);
     s1(ins_arr, nn[epoch]);
+
+    end_t = clock();
+    total1 = (double)(end_t - start_t)/CLOCKS_PER_SEC;
+
     // quick sort
+    start_t = clock();
+
     element *q_arr = get_array(epoch, nn[epoch]);
     s12(q_arr, nn[epoch]);
+
+    end_t = clock();
+    total2 = (double)(end_t - start_t)/CLOCKS_PER_SEC;
+
     // merge
+    start_t = clock();
+
     element *m_arr = get_array(epoch, nn[epoch]);
     s13(m_arr, nn[epoch]);
+
+    end_t = clock();
+    total3 = (double)(end_t - start_t)/CLOCKS_PER_SEC;
+
     // heap
+    start_t = clock();
+
     element *h_arr = get_array(epoch, nn[epoch]);
     s14(h_arr, nn[epoch]);
+
+    end_t = clock();
+    total4 = (double)(end_t - start_t)/CLOCKS_PER_SEC;
+   
+    
+    // store result
+    result[j] = total1;
+    result[j+1] = total2;
+    result[j+2] = total3;
+    result[j+3] = total4;
+
+    j += 4;
+  }
+
+  // print result
+  printf("\n");
+  int k;
+  for(k = 0; k < j; k += 4){
+   printf("n = %d\n", nn[(k+4)/5]);
+   printf("time of insertion sort: %lf\n", result[k]);  
+   printf("time of quick sort:     %lf\n", result[k+1]);
+   printf("time of merge sort:     %lf\n", result[k+2]);
+   printf("time of heap sort:      %lf\n", result[k+3]);
+   printf("\n");
   }
 }
 
 void println(){printf("\n");}
 void s1(element *aa, int len){
-  println();
-  printarray(aa, len);
-  printf("insertion sort:\n");
+  //println();
+  //printarray(aa, len);
+  //printf("insertion sort:\n");
   insertionSort(aa,len-1);
-  printarray(aa,len);
+  //printarray(aa,len);
 
 }
 
 void s12(element *aa, int len){
-   println(); 
-   printarray(aa, len);
-  printf("quick sort:\n");
+  // println(); 
+  //printarray(aa, len);
+  //printf("quick sort:\n");
   quickSort(aa,1,len-1);
-  printarray(aa,len);
+  //printarray(aa,len);
 
 }
 void s13(element *aa, int len){
-  println();
-  printarray(aa, len);
-  printf("merge sort:\n");
+  //println();
+  //printarray(aa, len);
+  //printf("merge sort:\n");
   my_mergesort(aa,len);
-  printarray(aa,len);
+  //printarray(aa,len);
 }
 void s14(element *aa, int len){
-  println();
-  printarray(aa, len);
-  printf("heap sort:\n");
+  //println();
+  //printarray(aa, len);
+  //printf("heap sort:\n");
   heapSort(aa,len);
-  printarray(aa,len+1);
+  //printarray(aa,len+1);
 }
-
+/*
 void s2(){
   int a[] = {0,5,9,1,6,4,7,8,3,2};
   //int a[] = {1,2,3,4,5,6,7,8,9};
@@ -284,12 +336,14 @@ void s4(){
   printarray(aa,len+1);   
 	
 }
+
 void debug(){
 //    s1();
     s2();
     s3();
     s4();
 }
+*/
 int main(void){
     solve();
     return 0;

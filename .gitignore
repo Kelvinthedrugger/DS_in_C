@@ -25,4 +25,5 @@ __pycache__
 *.py.un~
 .py~
 .py.un~
-
+*.swp
+.swp

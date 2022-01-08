@@ -4,9 +4,10 @@
 # make patricia && ./patricia
 
 cd zhash
-  make bloom && ./bloom
+  #make bloom && ./bloom
   #make hash && ./hash
 #  gcc -Wall -lm hashg.c -o hashg  && ./hashg
+  make pathw && ./pathw
 
 #cd zhw
 #   make sorts && ./sorts

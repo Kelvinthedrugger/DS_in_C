@@ -1,4 +1,5 @@
 // from textbook
+// check typing again 
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -144,19 +145,31 @@ void permute(element a[], int n){
 	}
 }
 
-void printarray(int *arr, int len){
+//void printarray(int *arr, int len){
+void printarray(element *arr, int len){
     printf("length: %d\n", len);
     int i;
     for(i = 0; i < len; i++)
-        printf("%d ",arr[i]);
+        printf("%d ",arr[i].key);
     printf("\n");
 }
 
 int main(void){
-	int a[] = {5,9,1,3,4,6,6,3,2};
+	//int a[] = {5,9,1,6,4,7,8,3,2};
+  int a[] = {1,2,3,4,5,6,7,8,9};
 	int len = sizeof(a)/sizeof(int);
+
+	element aa[len];
+	int i;
+	for(i = 0; i < len ; i++){
+		aa[i].key = a[i];
+	}
 	
-    printarray(a, len);
+  printarray(aa, len);
+
+  printf("\ninsertion sort:\n");
+  insertionSort(aa,len-1);
+  printarray(aa,len);
     
 	return 0;
 

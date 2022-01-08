@@ -2,6 +2,6 @@
 # cd pat
 # make patricia && ./patricia
 cd zhw
-  make sorts && ./sorts
-
+#  make sorts && ./sorts
+   make genran && ./genran
 

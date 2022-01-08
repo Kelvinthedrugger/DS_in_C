@@ -33,8 +33,49 @@ void swap(int *a, int *b){
 
 #define isFull(ptr) (!(ptr))
 
+
+// string to int and reversed
+unsigned int stringToInt(char *key){
+  int number = 0;
+  while(*key){
+    number += *key;
+    *key += 1;
+  }
+  return number;
+}
+
+unsigned int stringToInt2(char *key){
+  int number = 0;
+  while(*key){
+    number += *key;
+    *key += 1;
+    if(*key){
+      number += ((int) *key) << 8;
+      *key += 1;
+    }
+  }
+  return number;
+}
+
+unsigned int int_to_int(unsigned int k) {
+    return (k == 0 || k == 1 ? k : ((k % 2) + 10 * int_to_int(k / 2)));
+}
+
+int pows(int a, int b){
+  int i;
+  int base = a;
+  for(i = 1; i < b; i++){
+    a *= base;
+  }
+  return a;
+}
+
 // to pass compiling process
 int main(void){
 	printf("\nrun passed");
+  printf("\n%d -> %d", 8, int_to_int(8));
+  int a = 2, b = 20;
+  printf("\n %d ** %d = %d", a, b, pows(a,b));
+  printf("\n");
 	return 0;
 }

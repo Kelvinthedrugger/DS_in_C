@@ -59,6 +59,5 @@ int main(void){
   printarray(a,n);
   
   
-  
   return 0;
 }

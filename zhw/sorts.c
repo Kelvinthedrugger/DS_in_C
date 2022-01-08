@@ -2,6 +2,7 @@
 // check typing again 
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h> // for memcpy
 
 #define SWAP(x,y,t) ((t) = (x), (x) = (y), (y) = (t))
 
@@ -32,76 +33,73 @@ void quickSort(element a[], int left, int right){
 	int pivot, i, j;
 	element temp;
 	if(left < right){
-		while(left < right){
 			i = left;
 			j = right + 1;
+      pivot = a[left].key;
 			do{
 				do i++; while(a[i].key < pivot);
 				do j-=1; while(a[j].key > pivot);
 				if(i < j) SWAP(a[i],a[j],temp);
 			}while(i < j);
-		}
+		
 		SWAP(a[left],a[j],temp);
 		quickSort(a,left,j-1);
 		quickSort(a,j+1,right);
 	}
 }
 
+
+
 // merge sort
 // so troublesome compare with geohotz's solution
-#define MAX_SIZE 100
+// george hotz
+void my_mergesort(element *arr, int len) {
+  //printf("%p %d\n", arr, len);
+  if (len == 1) { return; }
+  if (len == 2) {
+    if (arr[0].key > arr[1].key) {
+      /*
+      int t = arr[1];
+      arr[1] = arr[0];
+      arr[0] = t;*/
+      element t;
+      SWAP(arr[0],arr[1],t);
+    }
+  }
 
-// merge 2 sorted list
-void merge(element initList[], element mergedList[], int i, int m, int n){
-	int j = m+1, k=i, t;
-	while(i <= m && j <= n){
-		if(initList[i].key <= initList[j].key){
-			mergedList[k++] = initList[i++];
-	}
-		else{
-			mergedList[k++] = initList[j++];
-		}
-	}
-	if(i < m){
-		for(t = j; t <= n; t++){
-			mergedList[t] = initList[t];
-		}
-	}
-	else{
-		for(t = i; t <= m; t++){
-			mergedList[k+t-i] = initList[t];
-		}
-	}
+  int p = len/2;
+  element *arr1 = arr;
+  element *arr2 = arr+p;
+
+  my_mergesort(arr1, p);
+  my_mergesort(arr2, len-p);
+
+  element *t = malloc(sizeof(int)*len);
+  element *rt = t;
+  while (1) {
+    if (arr1 < arr+p && arr2 < arr+len) {
+      if (arr1[0].key <= arr2[0].key) {
+        *t = *arr1;
+        arr1++;
+      } else {
+        *t = *arr2;
+        arr2++;
+      }
+    } else if(arr1 < arr+p) {
+      *t = *arr1;
+      arr1++;
+    } else if(arr2 < arr+len) {
+      *t = *arr2;
+      arr2++;
+    } else {
+      break;
+    }
+    t++;
+  }
+
+  memcpy(arr, rt, sizeof(element)*len);
+  free(rt);
 }
-
-void mergePass(element initList[], element mergedList[], int n, int s){
-	int i;
-	for(i = 1; i <= n-2*s+1; i += 2*s){
-		merge(initList, mergedList, i, i+s-1, i + 2*s -1);
-	}
-	if(i + s - 1 > n){
-		merge(initList, mergedList, i, i+s-1, n);
-	}
-	else{
-		int j;
-		for(j = i; j <= n; j++){
-			mergedList[j] = initList[j];
-		}
-	}
-}
-
-
-void mergeSort(element a[], int n){
-	int s = 1;
-	element extra[MAX_SIZE];
-	while(s < n){
-		mergePass(a, extra, n, s);
-		s *= 2;
-		mergePass(extra, a, n, s);
-		s *= 2;
-	}
-}
-
 // heap sort
 // use max heap
 void adjust(element a[], int root, int n){
@@ -123,7 +121,7 @@ void adjust(element a[], int root, int n){
 	}
 	a[child/2] = temp;
 }
-void heapsort(element a[], int n){
+void heapSort(element a[], int n){
 	int i,j;
 	element temp;
 	for(i = n/2; i > 0; i--){
@@ -144,19 +142,19 @@ void permute(element a[], int n){
 		SWAP(a[j],a[i],temp);
 	}
 }
-
 //void printarray(int *arr, int len){
 void printarray(element *arr, int len){
-    printf("length: %d\n", len);
+    printf("length: %d\n", len-1);
     int i;
-    for(i = 0; i < len; i++)
+    for(i = 1; i < len; i++)
         printf("%d ",arr[i].key);
     printf("\n");
 }
 
+
 int main(void){
-	//int a[] = {5,9,1,6,4,7,8,3,2};
-  int a[] = {1,2,3,4,5,6,7,8,9};
+	int a[] = {0,5,9,1,6,4,7,8,3,2};
+  //int a[] = {1,2,3,4,5,6,7,8,9};
 	int len = sizeof(a)/sizeof(int);
 
 	element aa[len];
@@ -166,11 +164,24 @@ int main(void){
 	}
 	
   printarray(aa, len);
-
   printf("\ninsertion sort:\n");
   insertionSort(aa,len-1);
   printarray(aa,len);
-    
-	return 0;
+  printf("\nquick sort:\n");
+  quickSort(aa, 1, len-1);
+  printarray(aa,len);   
+  // above done
+  printf("\nmerge sort:\n");
+  // somehow mergesort overflows
+  //mergeSort(aa, len);
+  // let's use geohotz's
+  my_mergesort(aa,len);
+  printarray(aa,len);   
+
+  printf("\nheap sort:\n");
+  heapSort(aa,len-1);
+  printarray(aa,len);   
+	
+  return 0;
 
 }

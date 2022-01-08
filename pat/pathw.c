@@ -1,7 +1,7 @@
 // hw version
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h> // since 
+#include<string.h> // since bit number utilizes string
 
 
 #define Malloc(p,s) if(!((p)=malloc(sizeof(*(p))*(s)))) exit(EXIT_FAILURE)

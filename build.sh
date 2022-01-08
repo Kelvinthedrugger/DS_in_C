@@ -9,6 +9,7 @@
 
 cd zhw
    make sorts && ./sorts
+   #make heaps && ./heaps
    #make mergegtz && ./mergegtz
 #   make genran && ./genran
 

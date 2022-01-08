@@ -12,6 +12,7 @@ struct element{
 };
 
 // insertion sort
+// 1 to n
 void insert(element e, element a[], int i){
 	a[0] = e;
 	while(e.key < a[i].key){
@@ -29,6 +30,7 @@ void insertionSort(element a[], int n){
 }
 
 // quick sort
+// 1 to n
 void quickSort(element a[], int left, int right){
 	int pivot, i, j;
 	element temp;
@@ -48,11 +50,10 @@ void quickSort(element a[], int left, int right){
 	}
 }
 
-
-
 // merge sort
 // so troublesome compare with geohotz's solution
 // george hotz
+// 1 to n
 void my_mergesort(element *arr, int len) {
   //printf("%p %d\n", arr, len);
   if (len == 1) { return; }
@@ -121,6 +122,9 @@ void adjust(element a[], int root, int n){
 	}
 	a[child/2] = temp;
 }
+
+// perform sort on a[1:n]
+// actually 0 to n
 void heapSort(element a[], int n){
 	int i,j;
 	element temp;
@@ -151,9 +155,8 @@ void printarray(element *arr, int len){
     printf("\n");
 }
 
-
-int main(void){
-	int a[] = {0,5,9,1,6,4,7,8,3,2};
+void s1(){
+  int a[] = {0,5,9,1,6,4,7,8,3,2};
   //int a[] = {1,2,3,4,5,6,7,8,9};
 	int len = sizeof(a)/sizeof(int);
 
@@ -167,21 +170,64 @@ int main(void){
   printf("\ninsertion sort:\n");
   insertionSort(aa,len-1);
   printarray(aa,len);
+
+}
+
+void s2(){
+  int a[] = {0,5,9,1,6,4,7,8,3,2};
+  //int a[] = {1,2,3,4,5,6,7,8,9};
+	int len = sizeof(a)/sizeof(int);
+
+	element aa[len];
+	int i;
+	for(i = 0; i < len ; i++){
+		aa[i].key = a[i];
+	}
+
   printf("\nquick sort:\n");
   quickSort(aa, 1, len-1);
   printarray(aa,len);   
-  // above done
+
+
+}
+
+void s3(){
+  int a[] = {0,5,9,1,6,4,7,8,3,2};
+  //int a[] = {1,2,3,4,5,6,7,8,9};
+	int len = sizeof(a)/sizeof(int);
+
+	element aa[len];
+	int i;
+	for(i = 0; i < len ; i++){
+		aa[i].key = a[i];
+	}
   printf("\nmerge sort:\n");
   // somehow mergesort overflows
   //mergeSort(aa, len);
   // let's use geohotz's
   my_mergesort(aa,len);
   printarray(aa,len);   
+}
+void s4(){
+  int a[] = {0,5,9,1,6,4,7,8,3,2};
+  //int a[] = {1,2,3,4,5,6,7,8,9};
+	int len = sizeof(a)/sizeof(int);
 
+	element aa[len];
+	int i;
+	for(i = 0; i < len ; i++){
+		aa[i].key = a[i];
+	}
   printf("\nheap sort:\n");
-  heapSort(aa,len-1);
-  printarray(aa,len);   
+  heapSort(aa,len);
+  printarray(aa,len+1);   
 	
-  return 0;
+}
+int main(void){
+    s1();
+    s2();
+    s3();
+    s4();
+    return 0;
 
 }

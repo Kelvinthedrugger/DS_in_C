@@ -62,6 +62,20 @@ a table of times for the composite function.
 */
 
 
+/*
+// come back at 19:00?
+create element a[n], n = 500, 1000, ...
+ and insert numbers (just insert from 1 to n-1)
+
+call permute(a, len)
+
+tic time // use clock_t ?  
+  whatever sort(a,len);
+toc time
+
+do the report
+*/
+
 int main(void){
   int r; 
   int i;

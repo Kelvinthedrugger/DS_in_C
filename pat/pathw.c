@@ -21,9 +21,21 @@ unsigned int stringToInt(char *key){
   return number;
 }
 
+// string to int
+unsigned int stringToInt(char *key){
+  int number = 0;
+  while(*key){
+    number += *key;
+    *key += 1;
+  }
+  return number;
+}
+
+unsigned int int_to_bit(unsigned int k) {
+    return (k == 0 || k == 1 ? k : ((k % 2) + 10 * int_to_bit(k / 2)));
+}
 // use atoi() to convert char *bitno into int::bitnumber ?
 int bit(int key, int bitnumber);
-
 
 // declares one key-val insertion
 void insertTree(char *key, int value);

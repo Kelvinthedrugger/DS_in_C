@@ -34,7 +34,7 @@ void swap(int *a, int *b){
 #define isFull(ptr) (!(ptr))
 
 
-// string to int and reversed
+// string to int
 unsigned int stringToInt(char *key){
   int number = 0;
   while(*key){
@@ -57,8 +57,8 @@ unsigned int stringToInt2(char *key){
   return number;
 }
 
-unsigned int int_to_int(unsigned int k) {
-    return (k == 0 || k == 1 ? k : ((k % 2) + 10 * int_to_int(k / 2)));
+unsigned int int_to_bit(unsigned int k) {
+    return (k == 0 || k == 1 ? k : ((k % 2) + 10 * int_to_bit(k / 2)));
 }
 
 int pows(int a, int b){

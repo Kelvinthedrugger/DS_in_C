@@ -3,6 +3,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h> // for memcpy
+#define Malloc(p,n) \
+	if(!((p) = malloc(sizeof(*(p))*(n)))){\
+		fprintf(stderr, "Insufficient memory");\
+		exit(EXIT_FAILURE);\
+	}
 
 #define SWAP(x,y,t) ((t) = (x), (x) = (y), (y) = (t))
 
@@ -137,6 +142,14 @@ void heapSort(element a[], int n){
 	}
 }
 
+void printarray(element *arr, int len){
+    printf("length: %d\n", len-1);
+    int i;
+    for(i = 1; i < len; i++)
+        printf("%d ",arr[i].key);
+    printf("\n");
+}
+
 void permute(element a[], int n){
 	// random permutation generator
 	int i,j;
@@ -146,31 +159,79 @@ void permute(element a[], int n){
 		SWAP(a[j],a[i],temp);
 	}
 }
-//void printarray(int *arr, int len){
-void printarray(element *arr, int len){
-    printf("length: %d\n", len-1);
-    int i;
-    for(i = 1; i < len; i++)
-        printf("%d ",arr[i].key);
-    printf("\n");
-}
-
-void s1(){
-  int a[] = {0,5,9,1,6,4,7,8,3,2};
-  //int a[] = {1,2,3,4,5,6,7,8,9};
-	int len = sizeof(a)/sizeof(int);
-
-	element aa[len];
-	int i;
+element *get_array(int epoch, int len){
+  int a[len];
+  int i;
+  // length might be a problem
+  for(i = 0; i < len; i++){
+    a[i] = i; 
+  }
+  element *aa;
+  Malloc(aa,len);
 	for(i = 0; i < len ; i++){
 		aa[i].key = a[i];
 	}
-	
+  permute(aa,len);
+
+  return aa;
+}
+
+void s1(element *aa, int len);
+void s12(element *aa, int len);
+void s13(element *aa, int len);
+void s14(element *aa, int len);
+
+void solve(){
+  int epoch = 0;
+  int nn[] = {500,1000,2000,3000,4000};
+
+  for(;epoch < 5; epoch++){
+    // insertion sort
+    element *ins_arr = get_array(epoch, nn[epoch]);
+    s1(ins_arr, nn[epoch]);
+    // quick sort
+    element *q_arr = get_array(epoch, nn[epoch]);
+    s12(q_arr, nn[epoch]);
+    // merge
+    element *m_arr = get_array(epoch, nn[epoch]);
+    s13(m_arr, nn[epoch]);
+    // heap
+    element *h_arr = get_array(epoch, nn[epoch]);
+    s14(h_arr, nn[epoch]);
+  }
+}
+
+void println(){printf("\n");}
+void s1(element *aa, int len){
+  println();
   printarray(aa, len);
-  printf("\ninsertion sort:\n");
+  printf("insertion sort:\n");
   insertionSort(aa,len-1);
   printarray(aa,len);
 
+}
+
+void s12(element *aa, int len){
+   println(); 
+   printarray(aa, len);
+  printf("quick sort:\n");
+  quickSort(aa,1,len-1);
+  printarray(aa,len);
+
+}
+void s13(element *aa, int len){
+  println();
+  printarray(aa, len);
+  printf("merge sort:\n");
+  my_mergesort(aa,len);
+  printarray(aa,len);
+}
+void s14(element *aa, int len){
+  println();
+  printarray(aa, len);
+  printf("heap sort:\n");
+  heapSort(aa,len);
+  printarray(aa,len+1);
 }
 
 void s2(){
@@ -223,11 +284,13 @@ void s4(){
   printarray(aa,len+1);   
 	
 }
-int main(void){
-    s1();
+void debug(){
+//    s1();
     s2();
     s3();
     s4();
+}
+int main(void){
+    solve();
     return 0;
-
 }

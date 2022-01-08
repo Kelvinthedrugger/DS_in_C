@@ -94,6 +94,7 @@ void deleteNode(int key);
 
 
 int main(void){
+  printf("compile passed\n");
   return 0;
 }
 

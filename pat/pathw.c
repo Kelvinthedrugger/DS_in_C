@@ -3,7 +3,6 @@
 #include<stdlib.h>
 #include<string.h> // since bit number utilizes string
 
-
 #define Malloc(p,s) if(!((p)=malloc(sizeof(*(p))*(s)))) exit(EXIT_FAILURE)
 
 typedef struct patriciaTree *patricia;
@@ -13,6 +12,14 @@ struct patriciaTree{
   patricia left, right;
 };
 
+unsigned int stringToInt(char *key){
+  int number = 0;
+  while(*key){
+    number += *key;
+    *key += 1;
+  }
+  return number;
+}
 
 // use atoi() to convert char *bitno into int::bitnumber ?
 int bit(int key, int bitnumber);

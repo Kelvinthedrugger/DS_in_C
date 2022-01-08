@@ -12,6 +12,30 @@ struct patriciaTree{
 
 patricia root;
 
+
+unsigned int int_to_int(unsigned int k) {
+    return (k == 0 || k == 1 ? k : ((k % 2) + 10 * int_to_int(k / 2)));
+}
+
+int pows(int a, int b){
+  int i;
+  int base = a;
+  for(i = 1; i < b; i++){
+    a *= base;
+  }
+  return a;
+}
+
+unsigned int logs(unsigned num){
+  unsigned int i = 0;
+  int base = 1;
+  while(base < num){
+    base *= 10;
+    i += 1;
+  }
+  return i;
+}
+
 int bit(unsigned k, int bitno){
   // return 1 or 0
   // returns the kth bit of the key k
@@ -35,7 +59,18 @@ int bit(unsigned k, int bitno){
   // count kth bit
 
   // return kth bit 
-  return 1;
+  unsigned newk = int_to_bit(k);
+  int exp = logs(newk);
+
+  // get kth bit == 1
+  int ans  = newk / pows(10,logs(newk));
+  while (ans != 1){
+    // remove the highest digit
+    newk -= pows(10,logs(newk));
+    ans  = newk / pows(10,logs(newk));
+  }
+  
+  return 0;
 }
 
 patricia search(patricia t, unsigned k){
@@ -94,7 +129,6 @@ void deleteNode(int key);
 
 
 int main(void){
-  printf("compile passed\n");
   return 0;
 }
 

@@ -164,19 +164,14 @@ void permute(element a[], int n){
 }
 
 element *get_array(int epoch, int len){
-  int a[len];
-  int i;
-  // length might be a problem
-  for(i = 0; i < len; i++){
-    a[i] = i; 
-  }
   element *aa;
   Malloc(aa,len);
+  // length might be a problem
+  int i;
 	for(i = 0; i < len ; i++){
-		aa[i].key = a[i];
+		aa[i].key = i;
 	}
   permute(aa,len);
-
   return aa;
 }
 

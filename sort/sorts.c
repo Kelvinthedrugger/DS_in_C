@@ -196,7 +196,8 @@ void solve(){
  
     start_t = clock();
 
-    arr = get_array(epoch, nn[epoch]);
+    //arr = get_array(epoch, nn[epoch]);
+    permute(arr,nn[epoch]);
     quickSort(arr, 1, nn[epoch]-1);
 
     end_t = clock();
@@ -204,7 +205,8 @@ void solve(){
 
     start_t = clock();
 
-    arr = get_array(epoch, nn[epoch]);
+    //arr = get_array(epoch, nn[epoch]);
+    permute(arr,nn[epoch]);
     my_mergesort(arr, nn[epoch]);
 
     end_t = clock();
@@ -212,7 +214,8 @@ void solve(){
     
     start_t = clock();
 
-    arr = get_array(epoch, nn[epoch]);
+    //arr = get_array(epoch, nn[epoch]);
+    permute(arr,nn[epoch]);
     heapSort(arr, nn[epoch]);
 
     end_t = clock();

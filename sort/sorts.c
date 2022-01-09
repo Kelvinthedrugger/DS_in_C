@@ -185,39 +185,32 @@ void solve(){
   int j = 0;  
 
   for(;epoch < 5; epoch ++){
+    element *arr = get_array(epoch, nn[epoch]);
     
     start_t = clock();
-
-    element *arr = get_array(epoch, nn[epoch]);
     insertionSort(arr, nn[epoch]-1);
-
     end_t = clock();
     total1 = (double)(end_t - start_t)/CLOCKS_PER_SEC;
  
-    start_t = clock();
 
     //arr = get_array(epoch, nn[epoch]);
     permute(arr,nn[epoch]);
+    start_t = clock();
     quickSort(arr, 1, nn[epoch]-1);
-
     end_t = clock();
     total2 = (double)(end_t - start_t)/CLOCKS_PER_SEC;
 
-    start_t = clock();
-
     //arr = get_array(epoch, nn[epoch]);
     permute(arr,nn[epoch]);
+    start_t = clock();
     my_mergesort(arr, nn[epoch]);
-
     end_t = clock();
     total3 = (double)(end_t - start_t)/CLOCKS_PER_SEC;
     
-    start_t = clock();
-
     //arr = get_array(epoch, nn[epoch]);
     permute(arr,nn[epoch]);
+    start_t = clock();
     heapSort(arr, nn[epoch]);
-
     end_t = clock();
     total4 = (double)(end_t - start_t)/CLOCKS_PER_SEC;
 

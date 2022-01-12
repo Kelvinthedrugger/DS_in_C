@@ -25,7 +25,7 @@ Node *newNode(int num){
 	tnode->child = NULL;
 	tnode->link = NULL;
 	tnode->prev = NULL;
-	tnode->degree = 0;
+	tnode->degree = 1; // deal with the height problem of subtree
 	return tnode;
 }
 

@@ -1,0 +1,6 @@
+decided to start from scratch in folder PQ
+
+start with leheap.c, which is the basic of any advanced priority queue
+, then implement b-heap and f-heap and smmh(which has a lot of variance annoyingly)
+
+

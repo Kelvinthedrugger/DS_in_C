@@ -7,6 +7,8 @@
 	Mainly served as a backup utility so that I don't have to re-type
 	everything from scratch when I don't have access to my laptop
 
+  Linux is way much better than Windows10 when developting in C
+
 #### Notes
 
 	Mainly developed on Windows 10, don't blame me for not using Unix-like sys.
@@ -18,6 +20,9 @@
 	makeit.c is now slow tho there is barely any memory occupied, need speed & low level hack on this
 
 #### Tips
+
+   On Unix-like, just run build.sh to compile & run files at the same time
+
 
    from command line, run below to compile the file (on Windows)
 
@@ -34,5 +39,5 @@
    you'll see the same YourFile.exe popping out in the folder, just run it if you would
 
    add makeit.exe to PATH variable on your device might help you to make .c file anywhere 
-   not just in this folder (not tested)
+   not just in this folder
 

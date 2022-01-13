@@ -1,24 +1,7 @@
 
  do DS here since it allows you to compare different program more quickly
 
- then move hws into ~/desktop/seninfo/ds/hwx
+ write a program the remove .exe and executable file in the folder
+  in .sh
 
- update to ~/documents/github/dss/c either, as a motivation to work hard
-
- About HWs: construct DSs here to fully experiment it 
-		,and merge to ../../seninfo/hw later
-
- HW3:
-
-	leftistTree.c (done) + binHeap.c(mostly done)	
-
-	fibonacci heap
-
-	minmaxheap done insertion following the textbook, deletion not done
-
-	AVL + red-black
-
-	Algorithm to search and delete keys from a B-tree by position
-
-	B+ tree for exact range search, insert and delete
 

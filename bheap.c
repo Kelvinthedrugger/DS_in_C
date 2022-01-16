@@ -63,7 +63,7 @@ void insertList(Node *head, Node *tar){
     tar->link = head;
     return;
   }
-  // tar is not head of a list
+  // tar is head of a list
   Node **ind2 = &tar;
   while((*ind2)->link != tar){
     ind2 = &(*ind2)->link;

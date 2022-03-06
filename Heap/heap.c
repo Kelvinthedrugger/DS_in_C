@@ -27,7 +27,7 @@ insert:
  i = 1: not looped
  heap[i] = n1
 index: 0  1  2  3 
-filed: - n1 n2 n3
+field: - n1 n2 n3
  */
 void insert_heap(int ele){
 	n += 1;

@@ -1,0 +1,578 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	C:/Users/Kelvin/wtvcode/insC/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/c4e38471/
+BOUNDARY_COLS	zothers/search_maze.cpp	/^#define BOUNDARY_COLS /;"	d	file:
+BinaryTree	binTree/reversebinarytree.c	/^struct BinaryTree{$/;"	s	file:
+BinaryTree	binTree/reversebinarytree.c	/^typedef struct BinaryTree BinaryTree;$/;"	t	typeref:struct:BinaryTree	file:
+Calloc	utlis.c	/^#define Calloc(/;"	d	file:
+CirList	Heap/Dheap.c	/^void CirList(Node *head){$/;"	f	typeref:typename:void
+CirList	Heap/Sheap.c	/^void CirList(Node *head){$/;"	f	typeref:typename:void
+Compare	Heap/Dheap.c	/^# define Compare(/;"	d	file:
+Compare	Heap/Sheap.c	/^# define Compare(/;"	d	file:
+Compare	utlis.c	/^# define Compare(/;"	d	file:
+Description	Readme.md	/^#### Description$/;"	t
+E	kruskal.c	/^	int E;$/;"	m	struct:Graph	typeref:typename:int	file:
+Edge	kruskal.c	/^typedef struct Edge{$/;"	s	file:
+Edge	kruskal.c	/^}Edge;$/;"	t	typeref:struct:Edge	file:
+FALSE	zothers/search_maze.cpp	/^#define FALSE /;"	d	file:
+Find	kruskal.c	/^int Find(int tar){$/;"	f	typeref:typename:int
+Graph	kruskal.c	/^typedef struct Graph{$/;"	s	file:
+Graph	kruskal.c	/^}Graph;$/;"	t	typeref:struct:Graph	file:
+HT_PRIME_1	zhash/hashg.c	/^#define HT_PRIME_1 /;"	d	file:
+HT_PRIME_2	zhash/hashg.c	/^#define HT_PRIME_2 /;"	d	file:
+List	LktList/linkedlist.c	/^struct List{$/;"	s	file:
+List	LktList/linkedlist.c	/^typedef struct List List;$/;"	t	typeref:struct:List	file:
+MAXLEN	Heap/smmh_txb.c	/^#define MAXLEN /;"	d	file:
+MAX_SIZE	sort/mergetext.c	/^#define MAX_SIZE /;"	d	file:
+MAX_STACK_SIZE	zothers/search_maze.cpp	/^#define MAX_STACK_SIZE /;"	d	file:
+MST	kruskal.c	/^void MST(Graph *graph){$/;"	f	typeref:typename:void
+Malloc	Heap/Dheap.c	/^#define Malloc(/;"	d	file:
+Malloc	Heap/Sheap.c	/^#define Malloc(/;"	d	file:
+Malloc	Heap/binHeap.c	/^#define Malloc(/;"	d	file:
+Malloc	Heap/fibHeap.c	/^#define Malloc(/;"	d	file:
+Malloc	Heap/leheap.c	/^#define Malloc(/;"	d	file:
+Malloc	LktList/linkedlist4.c	/^#define Malloc(/;"	d	file:
+Malloc	avltree.c	/^#define Malloc(/;"	d	file:
+Malloc	bheap.c	/^#define Malloc(/;"	d	file:
+Malloc	depq.c	/^#define Malloc(/;"	d	file:
+Malloc	depq2.c	/^#define Malloc(/;"	d	file:
+Malloc	pat/pathw.c	/^#define Malloc(/;"	d	file:
+Malloc	pat/ptr.c	/^#define Malloc(/;"	d	file:
+Malloc	pq/pq.c	/^#define Malloc(/;"	d	file:
+Malloc	sort/genran.c	/^#define Malloc(/;"	d	file:
+Malloc	sort/sorts.c	/^#define Malloc(/;"	d	file:
+Malloc	sort/tmpmain.c	/^#define Malloc(/;"	d	file:
+Malloc	utlis.c	/^#define Malloc(/;"	d	file:
+Malloc	zhash/bloom.c	/^#define Malloc(/;"	d	file:
+Malloc	zhash/hash.c	/^#define Malloc(/;"	d	file:
+Malloc	zhash/hashg.c	/^#define Malloc(/;"	d	file:
+NUM_COLS	zothers/search_maze.cpp	/^#define NUM_COLS /;"	d	file:
+NUM_ROWS	zothers/search_maze.cpp	/^#define NUM_ROWS /;"	d	file:
+Node	Heap/Dheap.c	/^struct Node{$/;"	s	file:
+Node	Heap/Dheap.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	Heap/Sheap.c	/^struct Node{$/;"	s	file:
+Node	Heap/Sheap.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	Heap/binHeap.c	/^struct Node{$/;"	s	file:
+Node	Heap/binHeap.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	Heap/fibHeap.c	/^struct Node{$/;"	s	file:
+Node	Heap/fibHeap.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	Heap/leheap.c	/^struct Node{$/;"	s	file:
+Node	Heap/leheap.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	LktList/circularlist.c	/^struct Node{$/;"	s	file:
+Node	LktList/circularlist.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	LktList/linkedlist.c	/^struct Node{$/;"	s	file:
+Node	LktList/linkedlist.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	LktList/linkedlist2.c	/^struct Node{$/;"	s	file:
+Node	LktList/linkedlist2.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	LktList/linkedlist3.c	/^struct Node{$/;"	s	file:
+Node	LktList/linkedlist3.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	LktList/linkedlist4.c	/^struct Node{$/;"	s	file:
+Node	LktList/linkedlist4.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	LktList/linkedlist_taste.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	LktList/linkedlist_taste.c	/^typedef struct Node{$/;"	s	file:
+Node	LktList/reverse_linked_list.c	/^struct Node{$/;"	s	file:
+Node	LktList/reverse_linked_list.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	avltree.c	/^struct Node{$/;"	s	file:
+Node	avltree.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	avltree_txb.c	/^struct Node{$/;"	s	file:
+Node	avltree_txb.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	bheap.c	/^struct Node{$/;"	s	file:
+Node	bheap.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	binTree/binary_tree.c	/^typedef struct Node{$/;"	s	file:
+Node	binTree/reversebinarytree.c	/^struct Node{$/;"	s	file:
+Node	binTree/reversebinarytree.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	binTree/revtree2.c	/^struct Node{$/;"	s	file:
+Node	binTree/revtree2.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	depq.c	/^struct Node{$/;"	s	file:
+Node	depq.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	depq2.c	/^struct Node{$/;"	s	file:
+Node	depq2.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Node	pq/pq.c	/^struct Node{$/;"	s	file:
+Node	pq/pq.c	/^typedef struct Node Node;$/;"	t	typeref:struct:Node	file:
+Notes	Readme.md	/^#### Notes$/;"	t
+P	zhash/bloom.c	/^double P(double u, double h){$/;"	f	typeref:typename:double
+Real Description	Readme.md	/^#### Real Description$/;"	t
+Realloc	utlis.c	/^#define Realloc(/;"	d	file:
+SWAP	Heap/Dheap.c	/^# define SWAP(/;"	d	file:
+SWAP	Heap/Sheap.c	/^# define SWAP(/;"	d	file:
+SWAP	Heap/leftistTree.c	/^# define SWAP(/;"	d	file:
+SWAP	Heap/smmh_txb.c	/^#define SWAP(/;"	d	file:
+SWAP	depq.c	/^# define SWAP(/;"	d	file:
+SWAP	depq2.c	/^#define SWAP(/;"	d	file:
+SWAP	pq/pq.c	/^# define SWAP(/;"	d	file:
+SWAP	sort/genran.c	/^#define SWAP(/;"	d	file:
+SWAP	sort/heaps.c	/^#define SWAP(/;"	d	file:
+SWAP	sort/mergegtz.c	/^#define SWAP(/;"	d	file:
+SWAP	sort/sorts.c	/^#define SWAP(/;"	d	file:
+SWAP	sort/tmpmain.c	/^#define SWAP(/;"	d	file:
+SWAP	utlis.c	/^# define SWAP(/;"	d	file:
+SinglyLinkedList	LktList/reverse_linked_list.c	/^struct SinglyLinkedList{$/;"	s	file:
+SinglyLinkedList	LktList/reverse_linked_list.c	/^typedef struct SinglyLinkedList SinglyLinkedList;$/;"	t	typeref:struct:SinglyLinkedList	file:
+StackNode	binTree/binary_tree.c	/^typedef struct StackNode{$/;"	s	file:
+Swap	bheap.c	/^#define Swap(/;"	d	file:
+TRUE	zothers/search_maze.cpp	/^#define TRUE /;"	d	file:
+Tips	Readme.md	/^#### Tips$/;"	t
+V	kruskal.c	/^	int V;$/;"	m	struct:Graph	typeref:typename:int	file:
+__anon0c8fccc50108	Heap/smmh_txb.c	/^typedef struct {$/;"	s	file:
+__anon823f1e560108	avltree_txb.c	/^typedef struct{$/;"	s	file:
+__anonefd4fe560108	zothers/search_maze.cpp	/^{$/;"	s	file:
+__anonefd4fe560208	zothers/search_maze.cpp	/^{$/;"	s	file:
+add	zothers/search_maze.cpp	/^void add(element item)$/;"	f	typeref:typename:void
+adjust	sort/heaps.c	/^void adjust(element a[], int root, int n){$/;"	f	typeref:typename:void
+adjust	sort/sorts.c	/^void adjust(element a[], int root, int n){$/;"	f	typeref:typename:void
+adjustMin	Heap/Dheap.c	/^void adjustMin(Node **Min, Node *Rok){$/;"	f	typeref:typename:void
+adjustMin	Heap/Sheap.c	/^void adjustMin(Node **Min, Node *Rok){$/;"	f	typeref:typename:void
+adjustMin	Heap/leheap.c	/^void adjustMin(Node *Minroot){$/;"	f	typeref:typename:void
+append	LktList/circularlist.c	/^void append(Node **last, int num, Node *root){$/;"	f	typeref:typename:void
+append	LktList/linkedlist.c	/^void append(List *list, int num) {$/;"	f	typeref:typename:void
+append	LktList/linkedlist2.c	/^void append(Node **tail, int num){$/;"	f	typeref:typename:void
+append	LktList/linkedlist4.c	/^void append(Node **tail, Node *newbie){$/;"	f	typeref:typename:void
+appendList	Heap/Dheap.c	/^void appendList(Node *head, Node *rok){$/;"	f	typeref:typename:void
+appendList	Heap/Sheap.c	/^void appendList(Node *head, Node *rok){$/;"	f	typeref:typename:void
+appendList	Heap/binHeap.c	/^void appendList(Node *head, Node *rookie){$/;"	f	typeref:typename:void
+appendList	Heap/fibHeap.c	/^void appendList(Node *head, Node *rookie){$/;"	f	typeref:typename:void
+appendList	Heap/leheap.c	/^void appendList(Node *head, Node *rookie){$/;"	f	typeref:typename:void
+appendList	depq.c	/^void appendList(Node *head, Node *rot){$/;"	f	typeref:typename:void
+appendList	depq2.c	/^void appendList(Node *head, Node *rok){$/;"	f	typeref:typename:void
+avlInsert	avltree.c	/^void avlInsert(Node **parent, int x, int *unbalanced){$/;"	f	typeref:typename:void
+avlInsert	avltree_txb.c	/^void avlInsert(Node **parent, element x, int *unbalanced){$/;"	f	typeref:typename:void
+bf	avltree.c	/^	short int bf;$/;"	m	struct:Node	typeref:typename:short int	file:
+bf	avltree_txb.c	/^	short int bf;$/;"	m	struct:Node	typeref:typename:short int	file:
+bit	pat/ptr.c	/^int bit(unsigned k, int bitno){$/;"	f	typeref:typename:int
+bitno	pat/pathw.c	/^  char *bitno;$/;"	m	struct:patriciaTree	typeref:typename:char *	file:
+bitno	pat/ptr.c	/^  int bitno;$/;"	m	struct:patriciaTree	typeref:typename:int	file:
+build_tree	binTree/binary_tree.c	/^void build_tree(struct Node* root,struct Node* node){$/;"	f	typeref:typename:void
+call	Heap/smmh_txb.c	/^void call(int arr[], int len, int top){$/;"	f	typeref:typename:void
+change_priority	Heap/heap.c	/^void change_priority(int ele, int idx){$/;"	f	typeref:typename:void
+child	Heap/Dheap.c	/^	Node *child;$/;"	m	struct:Node	typeref:typename:Node *	file:
+child	Heap/Sheap.c	/^	Node *child;$/;"	m	struct:Node	typeref:typename:Node *	file:
+child	Heap/binHeap.c	/^	struct Node *child;\/\/ points to one of its children $/;"	m	struct:Node	typeref:struct:Node *	file:
+child	Heap/fibHeap.c	/^	Node *child;$/;"	m	struct:Node	typeref:typename:Node *	file:
+child	Heap/leheap.c	/^	Node *child;$/;"	m	struct:Node	typeref:typename:Node *	file:
+child	bheap.c	/^  Node *child;$/;"	m	struct:Node	typeref:typename:Node *	file:
+child	depq.c	/^  Node *child; \/\/ point to child if any$/;"	m	struct:Node	typeref:typename:Node *	file:
+child	depq2.c	/^	Node *child;$/;"	m	struct:Node	typeref:typename:Node *	file:
+child	pq/pq.c	/^	Node *child;$/;"	m	struct:Node	typeref:typename:Node *	file:
+col	zothers/search_maze.cpp	/^    short int col;$/;"	m	struct:__anonefd4fe560108	typeref:typename:short int	file:
+comp	kruskal.c	/^int comp(const void* a, const void* b){$/;"	f	typeref:typename:int
+count	zhash/hashg.c	/^  int count;$/;"	m	struct:ht_table	typeref:typename:int	file:
+create	binTree/revtree2.c	/^Node *create(int *arr,int len){$/;"	f	typeref:typename:Node *
+create	kruskal.c	/^Graph *create(int V, int E){$/;"	f	typeref:typename:Graph *
+data	Heap/Dheap.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	Heap/Sheap.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	Heap/binHeap.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	Heap/fibHeap.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	Heap/leftistTree.c	/^	int data; \/\/ type:: struct element in textbook$/;"	m	struct:leftist	typeref:typename:int	file:
+data	Heap/leheap.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	LktList/circularlist.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	LktList/linkedlist.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	LktList/linkedlist2.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	LktList/linkedlist3.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	LktList/linkedlist4.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	LktList/linkedlist_taste.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	LktList/reverse_linked_list.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	avltree.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	avltree_txb.c	/^	element data;$/;"	m	struct:Node	typeref:typename:element	file:
+data	bheap.c	/^  int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	binTree/binary_tree.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	binTree/reversebinarytree.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	binTree/revtree2.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	depq.c	/^  int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	depq2.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	pat/pathw.c	/^  int data; \/\/ element data$/;"	m	struct:patriciaTree	typeref:typename:int	file:
+data	pat/ptr.c	/^  int data; \/\/ element data$/;"	m	struct:patriciaTree	typeref:typename:int	file:
+data	pq/pq.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+degree	Heap/Dheap.c	/^	int degree; \/\/ number of child$/;"	m	struct:Node	typeref:typename:int	file:
+degree	Heap/Sheap.c	/^	int degree; \/\/ number of child$/;"	m	struct:Node	typeref:typename:int	file:
+degree	Heap/binHeap.c	/^	int degree; \/\/ the number of children it has$/;"	m	struct:Node	typeref:typename:int	file:
+degree	Heap/fibHeap.c	/^	int degree;$/;"	m	struct:Node	typeref:typename:int	file:
+degree	Heap/leheap.c	/^	int degree;$/;"	m	struct:Node	typeref:typename:int	file:
+degree	bheap.c	/^  int degree;$/;"	m	struct:Node	typeref:typename:int	file:
+degree	depq.c	/^  int degree; \/\/ number of child aka height ?$/;"	m	struct:Node	typeref:typename:int	file:
+degree	depq2.c	/^	int degree;$/;"	m	struct:Node	typeref:typename:int	file:
+degree	pq/pq.c	/^	int degree; $/;"	m	struct:Node	typeref:typename:int	file:
+deleteAny	Heap/leheap.c	/^void deleteAny(Node *Minroot, Node *target){$/;"	f	typeref:typename:void
+deleteEle	Heap/fibHeap.c	/^void deleteEle(Node *Minroot, Node *target){$/;"	f	typeref:typename:void
+deleteMax	Heap/smmh_txb.c	/^element deleteMax(element heap[], int *n){$/;"	f	typeref:typename:element
+deleteMin	Heap/Dheap.c	/^void deleteMin(Node *Min){$/;"	f	typeref:typename:void
+deleteMin	Heap/Sheap.c	/^void deleteMin(Node *Min){$/;"	f	typeref:typename:void
+deleteMin	Heap/leheap.c	/^void deleteMin(Node *Minroot){$/;"	f	typeref:typename:void
+deleteMin	Heap/smmh_txb.c	/^element deleteMin(element heap[], int *n){$/;"	f	typeref:typename:element
+deleteMinEle	Heap/binHeap.c	/^void deleteMinEle(Node *Minroot){$/;"	f	typeref:typename:void
+deleteMinEle	Heap/fibHeap.c	/^void deleteMinEle(Node *Minroot){$/;"	f	typeref:typename:void
+des	kruskal.c	/^	int des;$/;"	m	struct:Edge	typeref:typename:int	file:
+dfs	LktList/reverse_linked_list.c	/^void dfs(Node* node,SinglyLinkedList* list){$/;"	f	typeref:typename:void
+dfs	binTree/reversebinarytree.c	/^void dfs(Node *node, BinaryTree *tree){$/;"	f	typeref:typename:void
+diff_P	zhash/bloom.c	/^double diff_P(double u, double h){$/;"	f	typeref:typename:double
+dir	zothers/search_maze.cpp	/^    short int dir;$/;"	m	struct:__anonefd4fe560108	typeref:typename:short int	file:
+edges	kruskal.c	/^	Edge *edges;$/;"	m	struct:Graph	typeref:typename:Edge *	file:
+element	Heap/smmh_txb.c	/^}element;$/;"	t	typeref:struct:__anon0c8fccc50108	file:
+element	avltree_txb.c	/^}element;$/;"	t	typeref:struct:__anon823f1e560108	file:
+element	sort/genran.c	/^struct element{$/;"	s	file:
+element	sort/genran.c	/^typedef struct element element;$/;"	t	typeref:struct:element	file:
+element	sort/heaps.c	/^struct element{$/;"	s	file:
+element	sort/heaps.c	/^typedef struct element element;$/;"	t	typeref:struct:element	file:
+element	sort/mergegtz.c	/^struct element{$/;"	s	file:
+element	sort/mergegtz.c	/^typedef struct element element;$/;"	t	typeref:struct:element	file:
+element	sort/sorts.c	/^struct element{$/;"	s	file:
+element	sort/sorts.c	/^typedef struct element element;$/;"	t	typeref:struct:element	file:
+element	sort/tmpmain.c	/^struct element{$/;"	s	file:
+element	sort/tmpmain.c	/^typedef struct element element;$/;"	t	typeref:struct:element	file:
+element	zhash/hash.c	/^struct element{$/;"	s	file:
+element	zhash/hash.c	/^typedef struct element element;$/;"	t	typeref:struct:element	file:
+element	zhash/hashg.c	/^struct element{$/;"	s	file:
+element	zhash/hashg.c	/^typedef struct element element;$/;"	t	typeref:struct:element	file:
+element	zothers/search_maze.cpp	/^} element;$/;"	t	typeref:struct:__anonefd4fe560108	file:
+empty	Heap/Dheap.c	/^int empty(Node **stack, int *top){$/;"	f	typeref:typename:int
+empty	Heap/Sheap.c	/^int empty(Node **stack, int *top){$/;"	f	typeref:typename:int
+fib	fib_tail.c	/^int fib(int n, int a, int b){$/;"	f	typeref:typename:int
+fill_in	binTree/revtree2.c	/^void fill_in(Node *tbd){$/;"	f	typeref:typename:void
+get_array	sort/sorts.c	/^element *get_array(int epoch, int len){$/;"	f	typeref:typename:element *
+h1	zhash/bloomincpp.cpp	/^int h1(string s, int arrSize)$/;"	f	typeref:typename:int
+h2	zhash/bloomincpp.cpp	/^int h2(string s, int arrSize)$/;"	f	typeref:typename:int
+h3	zhash/bloomincpp.cpp	/^int h3(string s, int arrSize)$/;"	f	typeref:typename:int
+h4	zhash/bloomincpp.cpp	/^int h4(string s, int arrSize)$/;"	f	typeref:typename:int
+h_arr	sort/debug.c	/^    element *h_arr = get_array(epoch, nn[epoch]);$/;"	v	typeref:typename:element *
+head	LktList/circularlist.c	/^Node **head;$/;"	v	typeref:typename:Node **
+head	LktList/linkedlist.c	/^	Node **head;$/;"	m	struct:List	typeref:typename:Node **	file:
+head	LktList/reverse_linked_list.c	/^	Node* head;$/;"	m	struct:SinglyLinkedList	typeref:typename:Node *	file:
+heap	Heap/heap.c	/^int *heap;$/;"	v	typeref:typename:int *
+heap	Heap/smmh_txb.c	/^element heap[MAXLEN];$/;"	v	typeref:typename:element[]
+heap	kruskal.c	/^int *heap;$/;"	v	typeref:typename:int *
+heapSort	sort/heaps.c	/^void heapSort(element a[], int n){$/;"	f	typeref:typename:void
+heapSort	sort/sorts.c	/^void heapSort(element a[], int n){$/;"	f	typeref:typename:void
+horiz	zothers/search_maze.cpp	/^    short int horiz;$/;"	m	struct:__anonefd4fe560208	typeref:typename:short int	file:
+ht_del_item	zhash/hashg.c	/^static void ht_del_item(element *i){$/;"	f	typeref:typename:void	file:
+ht_delete	zhash/hashg.c	/^void ht_delete(ht_table *ht, int key){$/;"	f	typeref:typename:void
+ht_get_hash	zhash/hashg.c	/^static int ht_get_hash(int s, const int buckets, const int attemp){$/;"	f	typeref:typename:int	file:
+ht_hash	zhash/hashg.c	/^static int ht_hash(int s, const int a, const int m){$/;"	f	typeref:typename:int	file:
+ht_insert	zhash/hashg.c	/^void ht_insert(ht_table *ht, int key, int value){$/;"	f	typeref:typename:void
+ht_search	zhash/hashg.c	/^int ht_search(ht_table *ht, int key){$/;"	f	typeref:typename:int
+ht_table	zhash/hashg.c	/^struct ht_table{$/;"	s	file:
+ht_table	zhash/hashg.c	/^typedef struct ht_table ht_table;$/;"	t	typeref:struct:ht_table	file:
+initList	bheap.c	/^void initList(Node *head){$/;"	f	typeref:typename:void
+initList	depq.c	/^void initList(Node *head){$/;"	f	typeref:typename:void
+init_move	zothers/search_maze.cpp	/^void init_move()$/;"	f	typeref:typename:void
+init_stack	binTree/revtree2.c	/^void init_stack(int size){$/;"	f	typeref:typename:void
+inorder	Heap/leftistTree.c	/^void inorder(leftistTree tree){$/;"	f	typeref:typename:void
+inorder	binTree/reversebinarytree.c	/^void inorder(Node *node){$/;"	f	typeref:typename:void
+inorder	binTree/revtree2.c	/^void inorder(Node *node){$/;"	f	typeref:typename:void
+input	binTree/revtree2.c	/^int *input;$/;"	v	typeref:typename:int *
+ins_arr	sort/debug.c	/^    element *ins_arr = get_array(epoch, nn[epoch]);$/;"	v	typeref:typename:element *
+insert	sort/genran.c	/^void insert(element e, element a[], int i){$/;"	f	typeref:typename:void
+insert	sort/sorts.c	/^void insert(element e, element a[], int i){$/;"	f	typeref:typename:void
+insert	zhash/bloomincpp.cpp	/^void insert(bool* bitarray, int arrSize, string s)$/;"	f	typeref:typename:void
+insertHeap	Heap/Dheap.c	/^void insertHeap(Node *Min, int x){$/;"	f	typeref:typename:void
+insertHeap	Heap/Sheap.c	/^void insertHeap(Node *Min, int x){$/;"	f	typeref:typename:void
+insertHeap	Heap/binHeap.c	/^void insertHeap(Node *Minroot, int x){$/;"	f	typeref:typename:void
+insertHeap	Heap/fibHeap.c	/^void insertHeap(Node *Minroot, int x){$/;"	f	typeref:typename:void
+insertHeap	Heap/leheap.c	/^void insertHeap(Node *Minroot, int x){$/;"	f	typeref:typename:void
+insertHeap	bheap.c	/^void insertHeap(Node *min, Node *tar){$/;"	f	typeref:typename:void
+insertList	bheap.c	/^void insertList(Node *head, Node *tar){$/;"	f	typeref:typename:void
+insertNode	pat/ptr.c	/^void insertNode(patricia *t, int key){$/;"	f	typeref:typename:void
+insertTree	depq.c	/^void insertTree(Node *Min, Node *rot){$/;"	f	typeref:typename:void
+insert_heap	Heap/heap.c	/^void insert_heap(int ele){$/;"	f	typeref:typename:void
+insertionSort	sort/genran.c	/^void insertionSort(element a[], int n){$/;"	f	typeref:typename:void
+insertionSort	sort/sorts.c	/^void insertionSort(element a[], int n){$/;"	f	typeref:typename:void
+int_to_bin	zhash/hashg.c	/^unsigned int int_to_bin(unsigned int k) {$/;"	f	typeref:typename:unsigned int
+int_to_bit	pat/pathw.c	/^unsigned int int_to_bit(unsigned int k) {$/;"	f	typeref:typename:unsigned int
+int_to_bit	utlis.c	/^unsigned int int_to_bit(unsigned int k) {$/;"	f	typeref:typename:unsigned int
+int_to_int	pat/ptr.c	/^unsigned int int_to_int(unsigned int k) {$/;"	f	typeref:typename:unsigned int
+isFull	avltree.c	/^#define isFull(/;"	d	file:
+isFull	avltree_txb.c	/^#define isFull(/;"	d	file:
+isFull	utlis.c	/^#define isFull(/;"	d	file:
+isempty	binTree/revtree2.c	/^int isempty(){$/;"	f	typeref:typename:int
+item	zhash/hash.c	/^  int item;$/;"	m	struct:element	typeref:typename:int	file:
+item	zhash/hashg.c	/^  int item;$/;"	m	struct:element	typeref:typename:int	file:
+items	zhash/hashg.c	/^  element **items;$/;"	m	struct:ht_table	typeref:typename:element **	file:
+key	Heap/smmh_txb.c	/^	int key;$/;"	m	struct:__anon0c8fccc50108	typeref:typename:int	file:
+key	avltree_txb.c	/^	int key;$/;"	m	struct:__anon823f1e560108	typeref:typename:int	file:
+key	sort/genran.c	/^	int key;$/;"	m	struct:element	typeref:typename:int	file:
+key	sort/heaps.c	/^	int key;$/;"	m	struct:element	typeref:typename:int	file:
+key	sort/mergegtz.c	/^	int key;$/;"	m	struct:element	typeref:typename:int	file:
+key	sort/sorts.c	/^	int key;$/;"	m	struct:element	typeref:typename:int	file:
+key	sort/tmpmain.c	/^	int key;$/;"	m	struct:element	typeref:typename:int	file:
+key	zhash/hash.c	/^  int key;$/;"	m	struct:element	typeref:typename:int	file:
+key	zhash/hashg.c	/^  int key;$/;"	m	struct:element	typeref:typename:int	file:
+last	LktList/circularlist.c	/^Node **last;$/;"	v	typeref:typename:Node **
+last	LktList/linkedlist.c	/^	Node **last;$/;"	m	struct:List	typeref:typename:Node **	file:
+left	binTree/binary_tree.c	/^	struct Node* left;$/;"	m	struct:Node	typeref:struct:Node *	file:
+left	binTree/reversebinarytree.c	/^	Node *left;$/;"	m	struct:Node	typeref:typename:Node *	file:
+left	binTree/revtree2.c	/^	Node *left;$/;"	m	struct:Node	typeref:typename:Node *	file:
+left	pat/pathw.c	/^  patricia left, right;$/;"	m	struct:patriciaTree	typeref:typename:patricia	file:
+left	pat/ptr.c	/^  patricia left, right;$/;"	m	struct:patriciaTree	typeref:typename:patricia	file:
+left	pq/pq.c	/^	Node *left, *right;$/;"	m	struct:Node	typeref:typename:Node *	file:
+left_rotation	avltree.c	/^void left_rotation(Node **parent,int *unbalanced){$/;"	f	typeref:typename:void
+left_rotation	avltree_txb.c	/^void left_rotation(Node **parent,int *unbalanced){$/;"	f	typeref:typename:void
+leftchild	Heap/leftistTree.c	/^	leftistTree leftchild;$/;"	m	struct:leftist	typeref:typename:leftistTree	file:
+leftchild	avltree.c	/^	Node *leftchild;$/;"	m	struct:Node	typeref:typename:Node *	file:
+leftchild	avltree_txb.c	/^	Node *leftchild;$/;"	m	struct:Node	typeref:typename:Node *	file:
+leftist	Heap/leftistTree.c	/^struct leftist{$/;"	s	file:
+leftistTree	Heap/leftistTree.c	/^typedef struct leftist* leftistTree;$/;"	t	typeref:struct:leftist *	file:
+len	zothers/make_.c	/^#define len /;"	d	file:
+level	Heap/smmh_txb.c	/^int level(int h){$/;"	f	typeref:typename:int
+link	Heap/Dheap.c	/^	Node *link; \/\/ sibling$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	Heap/Sheap.c	/^	Node *link; \/\/ sibling$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	Heap/binHeap.c	/^	struct Node *link; \/\/ siblings: singly linked circular list$/;"	m	struct:Node	typeref:struct:Node *	file:
+link	Heap/fibHeap.c	/^	Node *link;$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	Heap/leheap.c	/^	Node *link;$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	LktList/circularlist.c	/^	struct Node* link;$/;"	m	struct:Node	typeref:struct:Node *	file:
+link	LktList/linkedlist.c	/^	struct Node* link;$/;"	m	struct:Node	typeref:struct:Node *	file:
+link	LktList/linkedlist2.c	/^	Node *link;$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	LktList/linkedlist3.c	/^	Node *link;$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	LktList/linkedlist4.c	/^	Node *link;$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	bheap.c	/^  Node *link;$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	depq.c	/^  Node *link; \/\/ siblings, circular linked list$/;"	m	struct:Node	typeref:typename:Node *	file:
+link	depq2.c	/^	Node *link;$/;"	m	struct:Node	typeref:typename:Node *	file:
+ll	zhash/bloomincpp.cpp	/^#define ll /;"	d	file:
+logs	pat/ptr.c	/^unsigned int logs(unsigned num){$/;"	f	typeref:typename:unsigned int
+lookup	zhash/bloomincpp.cpp	/^bool lookup(bool* bitarray, int arrSize, string s)$/;"	f	typeref:typename:bool
+m	zhash/bloom.c	/^double u = 10.0, m = 10.0 , n = 10.0;$/;"	v	typeref:typename:double
+m_arr	sort/debug.c	/^    element *m_arr = get_array(epoch, nn[epoch]);$/;"	v	typeref:typename:element *
+main	Heap/Dheap.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Heap/Sheap.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Heap/binHeap.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Heap/fibHeap.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Heap/heap.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Heap/leftistTree.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Heap/leheap.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Heap/smmh_txb.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LktList/circularlist.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LktList/linkedlist.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LktList/linkedlist2.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LktList/linkedlist3.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LktList/linkedlist4.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LktList/linkedlist_taste.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LktList/reverse_linked_list.c	/^int main(void){$/;"	f	typeref:typename:int
+main	avltree.c	/^int main(void){$/;"	f	typeref:typename:int
+main	avltree_txb.c	/^int main(void){$/;"	f	typeref:typename:int
+main	bheap.c	/^int main(void){$/;"	f	typeref:typename:int
+main	binTree/binary_tree.c	/^int main(void){$/;"	f	typeref:typename:int
+main	binTree/reversebinarytree.c	/^int main(void){$/;"	f	typeref:typename:int
+main	binTree/revtree2.c	/^int main(void){$/;"	f	typeref:typename:int
+main	depq.c	/^int main(void){$/;"	f	typeref:typename:int
+main	depq2.c	/^int main(void){$/;"	f	typeref:typename:int
+main	fib_tail.c	/^int main(void){$/;"	f	typeref:typename:int
+main	kruskal.c	/^int main(void){$/;"	f	typeref:typename:int
+main	pat/pathw.c	/^int main(void){$/;"	f	typeref:typename:int
+main	pat/ptr.c	/^int main(void){$/;"	f	typeref:typename:int
+main	pq/pq.c	/^int main(void){$/;"	f	typeref:typename:int
+main	sort/genran.c	/^int main(void){$/;"	f	typeref:typename:int
+main	sort/heaps.c	/^int main(void){$/;"	f	typeref:typename:int
+main	sort/mergegtz.c	/^int main(void){$/;"	f	typeref:typename:int
+main	sort/sorts.c	/^int main(void){$/;"	f	typeref:typename:int
+main	sort/tmpmain.c	/^int main(void){$/;"	f	typeref:typename:int
+main	utlis.c	/^int main(void){$/;"	f	typeref:typename:int
+main	zhash/bloom.c	/^int main(void){$/;"	f	typeref:typename:int
+main	zhash/bloomincpp.cpp	/^int main()$/;"	f	typeref:typename:int
+main	zhash/hash.c	/^int main(void){$/;"	f	typeref:typename:int
+main	zhash/hashg.c	/^int main(void){$/;"	f	typeref:typename:int
+main	zothers/make_.c	/^int main(void){$/;"	f	typeref:typename:int
+main	zothers/makeit.c	/^int main(int argc, char *argv[]){$/;"	f	typeref:typename:int
+main	zothers/search_maze.cpp	/^int main()$/;"	f	typeref:typename:int
+main	zothers/testmake.c	/^int main(void){$/;"	f	typeref:typename:int
+main	zothers/timeit.c	/^int main () {$/;"	f	typeref:typename:int
+makeit	zothers/make.py	/^def makeit(filename):$/;"	f
+mark	zothers/search_maze.cpp	/^short int mark[][BOUNDARY_COLS] = {{0, 0, 0, 0, 0},$/;"	v	typeref:typename:short int[][]
+maxChildGnd	Heap/smmh_txb.c	/^int maxChildGnd(element heap[], int nodeI, int len){$/;"	f	typeref:typename:int
+maxlen	Heap/Dheap.c	/^# define maxlen /;"	d	file:
+maxlen	Heap/Sheap.c	/^# define maxlen /;"	d	file:
+maze	zothers/search_maze.cpp	/^static short int maze[][BOUNDARY_COLS] = {{1, 1, 1, 1, 1}, \/* top boundary  *\/$/;"	v	typeref:typename:short int[][]	file:
+meldHeaps	Heap/binHeap.c	/^void meldHeaps(Node *Minroot){$/;"	f	typeref:typename:void
+meldHeaps	Heap/fibHeap.c	/^void meldHeaps(Node *Minroot){$/;"	f	typeref:typename:void
+meldTwoHeaps	Heap/Dheap.c	/^void meldTwoHeaps(Node *h1, Node *h2){$/;"	f	typeref:typename:void
+meldTwoHeaps	Heap/Sheap.c	/^void meldTwoHeaps(Node *h1, Node *h2){$/;"	f	typeref:typename:void
+meldTwoHeaps	Heap/leheap.c	/^void meldTwoHeaps(Node *Minroot, Node *heap2){$/;"	f	typeref:typename:void
+meldTwoHeaps	bheap.c	/^void meldTwoHeaps(Node *head1, Node *head2){$/;"	f	typeref:typename:void
+meldTwoTrees	depq.c	/^void meldTwoTrees(Node *h1, Node *h2){$/;"	f	typeref:typename:void
+meldTwoTrees	depq2.c	/^void meldTwoTrees(Node *top1, Node *top2){$/;"	f	typeref:typename:void
+merge	sort/mergetext.c	/^void merge(element initList[], element mergedList[], int i, int m, int n){$/;"	f	typeref:typename:void
+mergePass	sort/mergetext.c	/^void mergePass(element initList[], element mergedList[], int n, int s){$/;"	f	typeref:typename:void
+mergeSort	sort/mergetext.c	/^void mergeSort(element a[], int n){$/;"	f	typeref:typename:void
+min	bheap.c	/^Node *min;$/;"	v	typeref:typename:Node *
+min	pq/pq.c	/^Node *min;$/;"	v	typeref:typename:Node *
+minChildGnd	Heap/smmh_txb.c	/^int minChildGnd(element heap[], int nodeI, int len){$/;"	f	typeref:typename:int
+minMeld	Heap/leftistTree.c	/^void minMeld(leftistTree* a, leftistTree* b){$/;"	f	typeref:typename:void
+minUnion	Heap/leftistTree.c	/^void minUnion(leftistTree* a, leftistTree* b){$/;"	f	typeref:typename:void
+minmaxInsert	Heap/smmh_txb.c	/^void minmaxInsert(element heap[], int *n, element item){$/;"	f	typeref:typename:void
+move	zothers/search_maze.cpp	/^offsets move[9]; \/* array of moves for each direction *\/$/;"	v	typeref:typename:offsets[9]
+mxlen	Heap/heap.c	/^#define mxlen /;"	d	file:
+my_mergesort	sort/mergegtz.c	/^void my_mergesort(element *arr, int len) {$/;"	f	typeref:typename:void
+my_mergesort	sort/sorts.c	/^void my_mergesort(element *arr, int len) {$/;"	f	typeref:typename:void
+n	Heap/heap.c	/^int n; \/\/ number of element of heap$/;"	v	typeref:typename:int
+n	zhash/bloom.c	/^double u = 10.0, m = 10.0 , n = 10.0;$/;"	v	typeref:typename:double
+newList	LktList/linkedlist.c	/^List *newList(void){$/;"	f	typeref:typename:List *
+newNode	Heap/Dheap.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	Heap/Sheap.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	Heap/binHeap.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	Heap/fibHeap.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	Heap/leftistTree.c	/^leftistTree newNode(int num){$/;"	f	typeref:typename:leftistTree
+newNode	Heap/leheap.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	LktList/circularlist.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	LktList/linkedlist.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	LktList/linkedlist2.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	LktList/linkedlist4.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	LktList/reverse_linked_list.c	/^Node* newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	bheap.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	binTree/binary_tree.c	/^struct Node* newNode(int value) {$/;"	f	typeref:struct:Node *
+newNode	binTree/reversebinarytree.c	/^Node* newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	binTree/revtree2.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	depq.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	depq2.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newNode	pq/pq.c	/^Node *newNode(int num){$/;"	f	typeref:typename:Node *
+newStackNode	binTree/binary_tree.c	/^struct StackNode* newStackNode(struct Node* tree_node){$/;"	f	typeref:struct:StackNode *
+newTree	binTree/reversebinarytree.c	/^BinaryTree *newTree(Node *root){$/;"	f	typeref:typename:BinaryTree *
+new_ht	zhash/hashg.c	/^ht_table *new_ht(){$/;"	f	typeref:typename:ht_table *
+new_ht_ele	zhash/hashg.c	/^element *new_ht_ele(int k, int v){$/;"	f	typeref:typename:element *
+newlinkedlist	LktList/reverse_linked_list.c	/^SinglyLinkedList* newlinkedlist(Node* head){$/;"	f	typeref:typename:SinglyLinkedList *
+next	LktList/linkedlist_taste.c	/^	Node* next;$/;"	m	struct:Node	typeref:typename:Node *	file:
+next	LktList/reverse_linked_list.c	/^	Node* next;$/;"	m	struct:Node	typeref:typename:Node *	file:
+next	binTree/binary_tree.c	/^	struct StackNode* next;$/;"	m	struct:StackNode	typeref:struct:StackNode *	file:
+normal	binTree/binary_tree.c	/^void normal(){$/;"	f	typeref:typename:void
+offsets	zothers/search_maze.cpp	/^} offsets;$/;"	t	typeref:struct:__anonefd4fe560208	file:
+old	zothers/makeit.c	/^void old(void){$/;"	f	typeref:typename:void
+path	zothers/search_maze.cpp	/^void path()$/;"	f	typeref:typename:void
+patricia	pat/pathw.c	/^typedef struct patriciaTree *patricia;$/;"	t	typeref:struct:patriciaTree *	file:
+patricia	pat/ptr.c	/^typedef struct patriciaTree *patricia;$/;"	t	typeref:struct:patriciaTree *	file:
+patriciaTree	pat/pathw.c	/^struct patriciaTree{$/;"	s	file:
+patriciaTree	pat/ptr.c	/^struct patriciaTree{$/;"	s	file:
+permute	sort/genran.c	/^void permute(element a[], int n){$/;"	f	typeref:typename:void
+permute	sort/sorts.c	/^void permute(element a[], int n){$/;"	f	typeref:typename:void
+permute	sort/tmpmain.c	/^void permute(element a[], int n){$/;"	f	typeref:typename:void
+pop	Heap/Dheap.c	/^void pop(Node **stack, int *top){$/;"	f	typeref:typename:void
+pop	Heap/Sheap.c	/^void pop(Node **stack, int *top){$/;"	f	typeref:typename:void
+pop	LktList/linkedlist2.c	/^void pop(Node *head, Node *target){$/;"	f	typeref:typename:void
+pop	binTree/revtree2.c	/^void pop(){$/;"	f	typeref:typename:void
+pop_from_heap	Heap/heap.c	/^int pop_from_heap(){$/;"	f	typeref:typename:int
+popfromHeap	bheap.c	/^void popfromHeap(Node *min){$/;"	f	typeref:typename:void
+popfromTree	depq.c	/^void popfromTree(Node *Min){$/;"	f	typeref:typename:void
+postorder	binTree/binary_tree.c	/^void postorder (struct Node* node){$/;"	f	typeref:typename:void
+pows	pat/ptr.c	/^int pows(int a, int b){$/;"	f	typeref:typename:int
+pows	utlis.c	/^int pows(int a, int b){$/;"	f	typeref:typename:int
+pows	zhash/hashg.c	/^int pows(int a, int b){$/;"	f	typeref:typename:int
+preorder	Heap/leftistTree.c	/^void preorder(leftistTree tree){$/;"	f	typeref:typename:void
+preorder	binTree/binary_tree.c	/^void preorder(struct Node* node){$/;"	f	typeref:typename:void
+preorder	binTree/reversebinarytree.c	/^void preorder(Node *node){$/;"	f	typeref:typename:void
+preorder	binTree/revtree2.c	/^void preorder(Node *node){$/;"	f	typeref:typename:void
+prev	Heap/Dheap.c	/^	Node *prev; \/\/ double ended$/;"	m	struct:Node	typeref:typename:Node *	file:
+prev	Heap/fibHeap.c	/^	Node *prev;$/;"	m	struct:Node	typeref:typename:Node *	file:
+prev	Heap/leheap.c	/^	Node *prev;$/;"	m	struct:Node	typeref:typename:Node *	file:
+prev	LktList/linkedlist4.c	/^	Node *prev;$/;"	m	struct:Node	typeref:typename:Node *	file:
+printList	Heap/Dheap.c	/^void printList(Node *head){$/;"	f	typeref:typename:void
+printList	Heap/Sheap.c	/^void printList(Node *head){$/;"	f	typeref:typename:void
+printList	Heap/binHeap.c	/^void printList(Node *head){$/;"	f	typeref:typename:void
+printList	Heap/fibHeap.c	/^void printList(Node *head){$/;"	f	typeref:typename:void
+printList	Heap/leheap.c	/^void printList(Node *head){$/;"	f	typeref:typename:void
+printList	bheap.c	/^void printList(Node *head){$/;"	f	typeref:typename:void
+printList	depq.c	/^void printList(Node *head){$/;"	f	typeref:typename:void
+printList	depq2.c	/^void printList(Node *head){$/;"	f	typeref:typename:void
+printTree	Heap/leftistTree.c	/^void printTree(leftistTree tree){$/;"	f	typeref:typename:void
+print_arr	binTree/revtree2.c	/^void print_arr(int *arr, int len){$/;"	f	typeref:typename:void
+print_heap	Heap/heap.c	/^void print_heap(){$/;"	f	typeref:typename:void
+print_list	LktList/reverse_linked_list.c	/^void print_list(Node* node){$/;"	f	typeref:typename:void
+print_maze	zothers/search_maze.cpp	/^void print_maze()$/;"	f	typeref:typename:void
+print_record	zothers/search_maze.cpp	/^void print_record(int row, int col, int dir)$/;"	f	typeref:typename:void
+print_stack	binTree/revtree2.c	/^void print_stack(){$/;"	f	typeref:typename:void
+print_tree	binTree/binary_tree.c	/^void print_tree(struct Node* root){$/;"	f	typeref:typename:void
+print_tree	binTree/revtree2.c	/^void print_tree(Node *root){$/;"	f	typeref:typename:void
+printarray	sort/heaps.c	/^void printarray(element *arr, int len){$/;"	f	typeref:typename:void
+printarray	sort/mergegtz.c	/^void printarray(element *arr, int len){$/;"	f	typeref:typename:void
+printarray	sort/sorts.c	/^void printarray(element *arr, int len){$/;"	f	typeref:typename:void
+printarray	sort/tmpmain.c	/^void printarray(element *arr, int len){$/;"	f	typeref:typename:void
+printinfo	depq2.c	/^void printinfo(Node *node){$/;"	f	typeref:typename:void
+printit	Heap/leftistTree.c	/^void printit(leftistTree root){$/;"	f	typeref:typename:void
+printlist	LktList/circularlist.c	/^void printlist(Node *head){$/;"	f	typeref:typename:void
+printlist	LktList/linkedlist.c	/^void printlist(Node *head){$/;"	f	typeref:typename:void
+printlist	LktList/linkedlist2.c	/^void printlist(Node *head){$/;"	f	typeref:typename:void
+printlist	LktList/linkedlist4.c	/^void printlist(Node *head){$/;"	f	typeref:typename:void
+println	depq2.c	/^void println(void){$/;"	f	typeref:typename:void
+println	sort/debug.c	/^void println(){printf("\\n");}$/;"	f	typeref:typename:void
+push	Heap/Dheap.c	/^void push(Node **stack,Node *node, int *top){$/;"	f	typeref:typename:void
+push	Heap/Sheap.c	/^void push(Node **stack,Node *node, int *top){$/;"	f	typeref:typename:void
+push	binTree/revtree2.c	/^void push(Node *node){$/;"	f	typeref:typename:void
+q_arr	sort/debug.c	/^    element *q_arr = get_array(epoch, nn[epoch]);$/;"	v	typeref:typename:element *
+quickSort	sort/sorts.c	/^void quickSort(element a[], int left, int right){$/;"	f	typeref:typename:void
+remove_list_node	LktList/linkedlist_taste.c	/^void remove_list_node(List* list, Node* target){$/;"	f	typeref:typename:void
+remove_node	LktList/linkedlist2.c	/^void remove_node(Node *head, Node *target, Node **tail){$/;"	f	typeref:typename:void
+remove_node	LktList/linkedlist4.c	/^void remove_node(Node *head, Node *tar, Node **tail){$/;"	f	typeref:typename:void
+removefromList	Heap/Dheap.c	/^void removefromList(Node *head, Node *target){$/;"	f	typeref:typename:void
+removefromList	Heap/Sheap.c	/^void removefromList(Node *head, Node *target){$/;"	f	typeref:typename:void
+removefromList	Heap/binHeap.c	/^void removefromList(Node *head, Node *target){$/;"	f	typeref:typename:void
+removefromList	Heap/fibHeap.c	/^void removefromList(Node *head, Node *target){$/;"	f	typeref:typename:void
+removefromList	Heap/leheap.c	/^void removefromList(Node *head, Node *target){$/;"	f	typeref:typename:void
+removefromList	bheap.c	/^void removefromList(Node *head, Node *tar){$/;"	f	typeref:typename:void
+removefromList	depq.c	/^void removefromList(Node *head, Node *target){$/;"	f	typeref:typename:void
+removefromList	depq2.c	/^void removefromList(Node *head, Node *target){$/;"	f	typeref:typename:void
+reverse	binTree/revtree2.c	/^void reverse(Node *root){$/;"	f	typeref:typename:void
+reverse_linked_list	LktList/reverse_linked_list.c	/^void reverse_linked_list(SinglyLinkedList* list){$/;"	f	typeref:typename:void
+reverse_tree	binTree/reversebinarytree.c	/^void reverse_tree(BinaryTree *tree){$/;"	f	typeref:typename:void
+right	binTree/binary_tree.c	/^	struct Node* right;$/;"	m	struct:Node	typeref:struct:Node *	file:
+right	binTree/reversebinarytree.c	/^	Node *right;$/;"	m	struct:Node	typeref:typename:Node *	file:
+right	binTree/revtree2.c	/^	Node *right;$/;"	m	struct:Node	typeref:typename:Node *	file:
+right	pat/pathw.c	/^  patricia left, right;$/;"	m	struct:patriciaTree	typeref:typename:patricia	file:
+right	pat/ptr.c	/^  patricia left, right;$/;"	m	struct:patriciaTree	typeref:typename:patricia	file:
+right	pq/pq.c	/^	Node *left, *right;$/;"	m	struct:Node	typeref:typename:Node *	file:
+right_rotation	avltree.c	/^void right_rotation(Node **parent,int *unbalanced){$/;"	f	typeref:typename:void
+right_rotation	avltree_txb.c	/^void right_rotation(Node **parent,int *unbalanced){$/;"	f	typeref:typename:void
+rightchild	Heap/leftistTree.c	/^	leftistTree rightchild;$/;"	m	struct:leftist	typeref:typename:leftistTree	file:
+rightchild	avltree.c	/^	Node *rightchild;$/;"	m	struct:Node	typeref:typename:Node *	file:
+rightchild	avltree_txb.c	/^	Node *rightchild;$/;"	m	struct:Node	typeref:typename:Node *	file:
+root	avltree_txb.c	/^Node *root = NULL;$/;"	v	typeref:typename:Node *
+root	binTree/reversebinarytree.c	/^	Node *root;$/;"	m	struct:BinaryTree	typeref:typename:Node *	file:
+root	pat/ptr.c	/^patricia root;$/;"	v	typeref:typename:patricia
+row	zothers/search_maze.cpp	/^    short int row;$/;"	m	struct:__anonefd4fe560108	typeref:typename:short int	file:
+s1	sort/debug.c	/^void s1(element *aa, int len){$/;"	f	typeref:typename:void
+s12	sort/debug.c	/^void s12(element *aa, int len){$/;"	f	typeref:typename:void
+s13	sort/debug.c	/^void s13(element *aa, int len){$/;"	f	typeref:typename:void
+s14	sort/debug.c	/^void s14(element *aa, int len){$/;"	f	typeref:typename:void
+search	pat/pathw.c	/^patricia search(int key){$/;"	f	typeref:typename:patricia
+search	pat/ptr.c	/^patricia search(patricia t, unsigned k){$/;"	f	typeref:typename:patricia
+search	zhash/hash.c	/^element *search(int k){$/;"	f	typeref:typename:element *
+shortest	Heap/leftistTree.c	/^	int shortest;$/;"	m	struct:leftist	typeref:typename:int	file:
+show	Heap/smmh_txb.c	/^void show(element heap[], int n){$/;"	f	typeref:typename:void
+size	zhash/hashg.c	/^  int size;$/;"	m	struct:ht_table	typeref:typename:int	file:
+solve	sort/sorts.c	/^void solve(){$/;"	f	typeref:typename:void
+src	kruskal.c	/^	int src;$/;"	m	struct:Edge	typeref:typename:int	file:
+ss	binTree/revtree2.c	/^void ss(Node **le, Node **rr){$/;"	f	typeref:typename:void
+stack	binTree/revtree2.c	/^Node **stack;$/;"	v	typeref:typename:Node **
+stack	zothers/search_maze.cpp	/^element stack[MAX_STACK_SIZE]; \/* global stack declaration *\/$/;"	v	typeref:typename:element[]
+stack_empty	zothers/search_maze.cpp	/^void stack_empty()$/;"	f	typeref:typename:void
+stack_full	zothers/search_maze.cpp	/^void stack_full()$/;"	f	typeref:typename:void
+stringToInt	pat/pathw.c	/^unsigned int stringToInt(char *key){$/;"	f	typeref:typename:unsigned int
+stringToInt	utlis.c	/^unsigned int stringToInt(char *key){$/;"	f	typeref:typename:unsigned int
+stringToInt2	utlis.c	/^unsigned int stringToInt2(char *key){$/;"	f	typeref:typename:unsigned int
+swap	kruskal.c	/^void swap(int *a, int *b){$/;"	f	typeref:typename:void
+swap	utlis.c	/^void swap(int *a, int *b){$/;"	f	typeref:typename:void
+t	pat/pathw.c	/^patricia t;$/;"	v	typeref:typename:patricia
+test	bheap.c	/^void test(){$/;"	f	typeref:typename:void
+test	depq2.c	/^void test(){$/;"	f	typeref:typename:void
+test1	Heap/Dheap.c	/^void test1(){$/;"	f	typeref:typename:void
+test1	Heap/Sheap.c	/^void test1(){$/;"	f	typeref:typename:void
+test1	Heap/binHeap.c	/^void test1(){$/;"	f	typeref:typename:void
+test2	depq2.c	/^void test2(){$/;"	f	typeref:typename:void
+testlist	depq.c	/^void testlist(void){$/;"	f	typeref:typename:void
+top	binTree/revtree2.c	/^int top;$/;"	v	typeref:typename:int
+top	zothers/search_maze.cpp	/^int top;$/;"	v	typeref:typename:int
+trav	depq2.c	/^Node *trav(Node *head){$/;"	f	typeref:typename:Node *
+traverse	Heap/Dheap.c	/^Node *traverse(Node *start, Node *tar){$/;"	f	typeref:typename:Node *
+traverse	Heap/Sheap.c	/^Node *traverse(Node *start, Node *tar){$/;"	f	typeref:typename:Node *
+tree_node	binTree/binary_tree.c	/^	struct Node* tree_node;\/\/pass by reference$/;"	m	struct:StackNode	typeref:struct:Node *	file:
+u	zhash/bloom.c	/^double u = 10.0, m = 10.0 , n = 10.0;$/;"	v	typeref:typename:double
+unbalanced	avltree_txb.c	/^int unbalanced = 0;$/;"	v	typeref:typename:int
+united	kruskal.c	/^void united(int a, int b){$/;"	f	typeref:typename:void
+verifymax	Heap/smmh_txb.c	/^void verifymax(element heap[], int i, element item){$/;"	f	typeref:typename:void
+verifymin	Heap/smmh_txb.c	/^void verifymin(element heap[], int i, element item){$/;"	f	typeref:typename:void
+vert	zothers/search_maze.cpp	/^    short int vert;$/;"	m	struct:__anonefd4fe560208	typeref:typename:short int	file:
+view	Heap/Dheap.c	/^Node *view(Node **stack, int *top){$/;"	f	typeref:typename:Node *
+view	Heap/Sheap.c	/^Node *view(Node **stack, int *top){$/;"	f	typeref:typename:Node *
+view	binTree/revtree2.c	/^Node *view(){$/;"	f	typeref:typename:Node *
+weight	kruskal.c	/^	int weight;$/;"	m	struct:Edge	typeref:typename:int	file:
+weird_tree	binTree/binary_tree.c	/^void weird_tree(){$/;"	f	typeref:typename:void
